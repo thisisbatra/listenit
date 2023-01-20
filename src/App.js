@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import LibraryContainer from './Components/LibraryContainer/LibraryContainer';
 
 function App() {
+  const data = [ {index: 1, songName: "DilWale" },
+    {index: 2, songName: "Sanam Re" },
+    {index: 3, songName: "Apna Bana Le" },]
   return (
     <div className="App">
-      <LibraryContainer/>
+    
+      {data.map(()=><LibraryContainer/>)}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
