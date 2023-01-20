@@ -1,8 +1,17 @@
+:root {
+  --libContBgc: #D9D9D9;
+  --arrContBgc: #878787;
+  --playBtnBgc: #878787;
+  --lightFontColor: #fff;
+  --songContBgc: rgb(107, 107, 107);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 .App {
   text-align: center;
   width: 100vw;

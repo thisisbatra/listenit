@@ -1,5 +1,5 @@
 .songCont {
-    background-color: rgb(107, 107, 107);
+    background-color: var(--songContBgc);
     padding: 1rem;
     border-radius: 15px;
     min-width: 28vw;
@@ -11,7 +11,7 @@
 }
 .playBtn {
     position: relative;
-    background-color: #878787;
+    background-color: var(--playBtnBgc);
     display: flex;
     border-radius: 50%;
     transition: .2s;
@@ -31,7 +31,7 @@
 }
 .songName {
     position: absolute;
-    color: #fff;
+    color: var(--lightFontColor);
     bottom: 10px;
     font-size: 1.5rem;
 }
