@@ -1,14 +1,15 @@
-.libCont {
+.songCont {
     background-color: #000;
     padding: 1rem;
     border-radius: 10px;
-    width: 100%;
+    width: 30%;
+    aspect-ratio: 16/9;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.arrCont {
+.playBtn {
     position: absolute;
     background-color: #878787;
     display: flex;

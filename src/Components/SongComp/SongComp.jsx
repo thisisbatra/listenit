@@ -8,8 +8,8 @@ function SongComp() {
         style={{
             backgroundImage: ``
         }}
-        className={styles.libCont}>SongComp
-        <span className={`${styles.arrCont} ${styles.right}`}><BsFillPlayCircleFill/></span>
+        className={styles.songCont}>SongComp
+        <span className={styles.playBtn}><BsFillPlayCircleFill/></span>
     </div>
   )
 }

@@ -9,7 +9,7 @@ function LibraryContainer() {
         style={{
             backgroundImage: ``
         }}
-        className={styles.libCont}>LibraryContainer
+        className={styles.libCont}>
         <SongComp/>
         <span className={`${styles.arrCont} ${styles.right}`}><MdArrowForwardIos/></span>
         <span className={`${styles.arrCont} ${styles.left}`}><MdArrowForwardIos/></span>
