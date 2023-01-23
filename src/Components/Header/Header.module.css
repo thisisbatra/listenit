@@ -2,4 +2,40 @@
     margin-bottom: 1rem;
     background-color: var(--libContBgc);
     display: flex;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+} 
+.input{
+    display: flex;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5rem;
+    overflow: hidden;
+    padding: 1px 5px;
+    align-items: center;
+}
+.input input{
+    width: 100%;
+    padding: 1px 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.input li{
+    margin-left: 1rem;
+    display: flex;
+}
+.nav ul span{
+    display: flex;
+    gap: 2rem;
+    width:10%;
+    justify-content: space-between;
+    border: 1px black solid
 }

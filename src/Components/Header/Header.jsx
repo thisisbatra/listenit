@@ -7,11 +7,18 @@ const Header = () => {
     return (
         <nav className={styles.nav}>
             <ul>
-                <li><AiFillHome/></li>
-                <li><AiOutlineSearch/></li>
+                <span>
                 <li>listenit</li>
+                <li><AiFillHome/></li>
+                </span>
+                <div className={styles.input}>
+                <li><AiOutlineSearch/></li>
+                <input type="text" name="" placeholder="enter songs, artist name to find results!"/>
+                </div>
+                <span>
                 <li><BsSuitHeart/></li>
                 <li><FaUserCircle/></li>
+                </span>
             </ul>
         </nav>
     );
