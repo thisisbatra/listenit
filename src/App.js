@@ -7,10 +7,12 @@ function App() {
     {index: 2, songName: "Sanam Re" },
     {index: 3, songName: "Apna Bana Le" },]
   return (
-      <>
-        <Header/>
+    <>
+      <Header/>
+      <div className="App">
         {data.map(()=><LibraryContainer/>)}
-      </>  
+      </div>  
+    </>
   );
 }
 
