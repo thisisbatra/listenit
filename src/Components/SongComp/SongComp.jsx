@@ -3,14 +3,16 @@ import styles from './SongComp.module.css'
 import { BsFillPlayCircleFill } from 'react-icons/bs'
 
 function SongComp(props) {
+  // console.log(props.song.thumb)
   return (
     <div
         style={{
-            backgroundImage: `${props.imageUrl}`
+            backgroundImage: `url(${props.song.thumb})`,
         }}
-        className={styles.songCont}>
+        className={styles.songCont}
+      >
         <span className={styles.playBtn}><BsFillPlayCircleFill/></span>
-        <span className={styles.songName}>{props.songNameProp}</span>
+        <span className={styles.songName}>{props.song.trackName}</span>
     </div>
   )
 }

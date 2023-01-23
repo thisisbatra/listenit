@@ -1,0 +1,39 @@
+{
+    "random":[
+        {
+            "id":1,
+            "trackName":"Badnam the bad boy",
+            "movieName":"Single",
+            "artist":"Mankirt Aulakh",
+            "thumb":"https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/9c/5e/4b/9c5e4b21-7abd-3cf4-9f1b-e77d1886325c/8902633278462.jpg/100x100bb.jpg",
+            "url":"../assets/mp3/Badnam  The Bad Boy -(Mr-Jatt.com).mp3"
+        },
+        {
+            "id":2,
+            "trackName":"Blue Eyes Yo Yo Honey Singh",
+            "movieName":"Single",
+            "artist":"Honey Singh",
+            "thumb":"https://is5-ssl.mzstatic.com/image/thumb/Music71/v4/81/0b/a4/810ba47e-952c-8818-ad3c-9899b4928cd4/8902894354943_cover.jpg/100x100bb.jpg",
+            "url":"../assets/mp3/Blue Eyes Yo Yo Honey Singh (PagalWorld.com) - 320Kbps .mp3"
+        },
+        {
+            "id":3,
+            "trackName":"Bol Do Na Zara",
+            "movieName":"Azhar",
+            "artist":"Honey Singh",
+            "thumb":"https://is5-ssl.mzstatic.com/image/thumb/Music71/v4/81/0b/a4/810ba47e-952c-8818-ad3c-9899b4928cd4/8902894354943_cover.jpg/100x100bb.jpg",
+            "url":"../assets/mp3/Blue Eyes Yo Yo Honey Singh (PagalWorld.com) - 320Kbps .mp3"
+        }
+    ],
+    "topHits":[
+        {
+            "id":1,
+            "trackName":"Apna Bana le",
+            "movieName":"Bhediya",
+            "artist":"Arijit Singh",
+            "thumb":"https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/2e/0b/c0/2e0bc070-112f-a827-6ad8-6bc64f7caaff/840214460180.png/100x100bb.jpg",
+            "url":"../assets/mp3/Apna-Bana-Le(PaglaSongs).mp3"
+        }
+    ],
+    "allTimeFavourite":[]
+}

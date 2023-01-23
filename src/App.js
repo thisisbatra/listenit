@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './Components/Header/Header';
 import LibraryContainer from './Components/LibraryContainer/LibraryContainer';
 
 function App() {
@@ -6,24 +7,10 @@ function App() {
     {index: 2, songName: "Sanam Re" },
     {index: 3, songName: "Apna Bana Le" },]
   return (
-    <div className="App">
-    
-      {data.map(()=><LibraryContainer/>)}
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+      <>
+        <Header/>
+        {data.map(()=><LibraryContainer/>)}
+      </>  
   );
 }
 
