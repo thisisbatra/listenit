@@ -12,7 +12,7 @@ function LibraryContainer() {
     let url="http://localhost:3005/random"
     let p=axios.get(url);
     p.then((res)=>{
-      console.log(res);
+      // console.log(res);
       setSong(res.data)
     }).catch((err)=>{
       console.log(err);

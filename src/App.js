@@ -1,18 +1,23 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
-import LibraryContainer from './Components/LibraryContainer/LibraryContainer';
+import Home from './Components/Home/Home';
+import PageNotFound from './Components/PageNotFound/PageNotFound';
+import Search from './Components/Search/Search';
 
 function App() {
-  const data = [ {index: 1, songName: "DilWale" },
-    {index: 2, songName: "Sanam Re" },
-    {index: 3, songName: "Apna Bana Le" },]
+
   return (
-    <>
-      <Header/>
-      <div className="App">
-        {data.map(()=><LibraryContainer/>)}
-      </div>  
-    </>
+    <BrowserRouter>
+          <Header/>
+          <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path='/search' element={<Search/>}/>
+              <Route path='*' element={<PageNotFound/>}/>
+          </Routes>
+          <Footer/>
+    </BrowserRouter>
   );
 }
 
