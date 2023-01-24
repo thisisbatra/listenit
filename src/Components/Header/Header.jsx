@@ -16,7 +16,7 @@ const Header = () => {
                 </span>
                 <div className={styles.input}>
                 <li><AiOutlineSearch/></li>
-                <input type="text" name="" placeholder="enter songs, artist name to find results!"/>
+                <input type="text" name="input" placeholder="enter artist,album,song "/>
                 </div>
                 <span>
                 <li><BsSuitHeart/></li>
