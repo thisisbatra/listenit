@@ -7,6 +7,7 @@ import {BiMenu} from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    const inputPlaceholder="enter artist, album, song name to get results"
     return (
         <nav className={styles.nav}>
             <ul>
@@ -16,7 +17,7 @@ const Header = () => {
                 </span>
                 <div className={styles.input}>
                 <li><AiOutlineSearch/></li>
-                <input type="text" name="input" placeholder="enter artist,album,song "/>
+                <input type="text" name="input" placeholder={inputPlaceholder}/>
                 </div>
                 <span>
                 <li><BsSuitHeart/></li>

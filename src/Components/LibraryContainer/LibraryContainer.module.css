@@ -37,9 +37,13 @@
     box-shadow: -2px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 .right {
-    right: -1.5rem;
+    right: 0.5rem;
 }
 .left {
-    left: -1.5rem;
+    left: 0.5rem;
     transform: rotate(180deg);
+}
+.outerLibCont h3{
+    position: absolute;
+    font-size: 10px;
 }
