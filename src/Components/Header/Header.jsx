@@ -25,7 +25,7 @@ const Header = () => {
                 <input type="text" name="input" placeholder={inputPlaceholder} onChange={handler}/>
                 </div>
                 <span>
-                <li><BsSuitHeart/></li>
+                <li><Link path="/"><BsSuitHeart/></Link></li>
                 <li><FaUserCircle/></li>
                 <li><BiMenu/></li>
                 </span>

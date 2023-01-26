@@ -33,9 +33,9 @@ const Home = () => {
     },[]);
 
     return (
-        <div>
-            <LibraryContainer data={randomSong} head="random"/>
-            <LibraryContainer data={topHitSong} head="top hits"/>
+        <div style={{ padding: "1rem 2rem" }}>
+            <LibraryContainer data={randomSong} head="Randoms"/>
+            <LibraryContainer data={topHitSong} head="Top Hits"/>
         </div>
     );
 }

@@ -3,7 +3,7 @@ import styles from './SongComp.module.css'
 import { BsFillPlayCircleFill } from 'react-icons/bs'
 
 function SongComp(props) {
-  // console.log(props.song.thumb)
+
   return (
     <div
         style={{
