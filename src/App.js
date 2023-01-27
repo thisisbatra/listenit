@@ -17,8 +17,8 @@ function App() {
               <Route path='/search' element={<Search/>}/>
               <Route path='*' element={<PageNotFound/>}/>
           </Routes>
-          <Footer/>
           <SongPlayer/>
+          <Footer/>
     </BrowserRouter>
   );
 }
