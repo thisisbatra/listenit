@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Search from './Components/Search/Search';
+import SongPlayer from './Components/SongPlayer/SongPlayer';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
               <Route path='*' element={<PageNotFound/>}/>
           </Routes>
           <Footer/>
+          <SongPlayer/>
     </BrowserRouter>
   );
 }
