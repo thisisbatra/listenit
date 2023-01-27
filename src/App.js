@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
+import OurTeam from './Components/OurTeam/OurTeam';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Search from './Components/Search/Search';
 import SongPlayer from './Components/SongPlayer/SongPlayer';
@@ -15,6 +16,7 @@ function App() {
           <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path='/search' element={<Search/>}/>
+              <Route path='/OurTeam' element={<OurTeam/>}/>
               <Route path='*' element={<PageNotFound/>}/>
           </Routes>
           <SongPlayer/>

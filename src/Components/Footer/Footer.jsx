@@ -8,7 +8,7 @@ const Footer = () => {
                 project @ MCA 1<sup>st</sup> semester
             </span>
             <span>
-                <Link>our team</Link>
+                <Link to="/OurTeam">our team</Link>
             </span>
         </footer>
     );
