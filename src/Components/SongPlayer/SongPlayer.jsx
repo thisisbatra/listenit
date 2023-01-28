@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import SongContext from '../../Context/SongContext'
 import styles from './SongPlayer.module.css'
-import { BsFillPlayCircleFill } from 'react-icons/bs'
+// import { BsFillPlayCircleFill } from 'react-icons/bs'
 
 function SongPlayer(props) {
-  console.log("from songPlayer",props.track);
+  
+  const [songForSongPlayer,setSongForSongPlayer]=useContext(SongContext);
+  // console.log(songForSongPlayer.url)
   return (
     <div className={styles.songPlayerCont}>
         SongPlayer
         <div className={styles.controlsCont}>
-          <div className={styles.songNameCont}>Song Name</div>
+          <audio src={songForSongPlayer.url} controls>
+              audio not supported:(
+          </audio>
+          <div className={styles.songNameCont}>{songForSongPlayer.trackName}</div>
         </div>
     </div>
   )

@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './SongComp.module.css'
 import { BsFillPlayCircleFill } from 'react-icons/bs'
-import SongPlayer from "../SongPlayer/SongPlayer"
+import SongContext from '../../Context/SongContext'
+
 function SongComp(props) {
-  const click=()=>{
-      console.log("from songComp",props.song);
-      <SongPlayer track={props.song}/>
+
+  const [songForSongPlayer,setSongForSongPlayer]=useContext(SongContext);
+
+  const clickEvent=()=>{
+      setSongForSongPlayer(props.song);
   }
+
   return (
     <div
         style={{
@@ -14,7 +18,7 @@ function SongComp(props) {
         }}
         className={styles.songCont}
       >
-        <span className={styles.playBtn}><BsFillPlayCircleFill onClick={click} /></span>
+        <span className={styles.playBtn}><BsFillPlayCircleFill onClick={clickEvent}/></span>
         <span className={styles.songName}>{props.song.trackName}</span>
     </div>
   )

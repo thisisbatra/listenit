@@ -1,6 +1,6 @@
 .songPlayerCont {
     width: 100%;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     padding: 10px;
 }

@@ -12,7 +12,6 @@
     background-size: cover;
     overflow: hidden;
     image-rendering: high-quality;
-    cursor: pointer;
     transition: .5s;
 }
 .songCont:hover {
@@ -25,6 +24,7 @@
     display: flex;
     border-radius: 50%;
     font-size: 4rem;
+    cursor: pointer;
     transition: .5s;
     z-index: 1;
     opacity: 0;

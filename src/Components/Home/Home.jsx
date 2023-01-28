@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import LibraryContainer from '../LibraryContainer/LibraryContainer'; 
 
 const Home = () => {
-    
+
     const [randomSong, setRandomSong] = useState([]);
     const [topHitSong, setTopHitSong] = useState([]);
 
@@ -34,9 +34,9 @@ const Home = () => {
 
     return (
         <div style={{ padding: "1rem 2rem" }}>
-            <LibraryContainer data={randomSong} head="Randoms"/>
-            <LibraryContainer data={topHitSong} head="Top Hits"/>
-        </div>
+                <LibraryContainer data={randomSong} head="Randoms"/>
+                <LibraryContainer data={topHitSong} head="Top Hits"/>
+            </div>
     );
 }
 
