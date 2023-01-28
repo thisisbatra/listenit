@@ -5,13 +5,13 @@ import styles from './SongPlayer.module.css'
 
 function SongPlayer(props) {
   
-  const [songForSongPlayer,setSongForSongPlayer]=useContext(SongContext);
+  const [songForSongPlayer]=useContext(SongContext);
   // console.log(songForSongPlayer.url)
   return (
     <div className={styles.songPlayerCont}>
         SongPlayer
         <div className={styles.controlsCont}>
-          <audio src={songForSongPlayer.url} controls>
+          <audio src={songForSongPlayer.url} controls autoPlay loop>
               audio not supported:(
           </audio>
           <div className={styles.songNameCont}>{songForSongPlayer.trackName}</div>
