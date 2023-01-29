@@ -7,11 +7,13 @@ import styles from './Search.module.css';
 const Search = (props) => {
     const [songData,setSongData]=useState([]);
     const location=useLocation();
+    const val=location.state.inputVal
     const getData=()=>{
-        let url=`https://itunes.apple.com/search?term=${location.state.inputVal}&media=music&entity=song&limit=12&country=in`
+        let url=`https://itunes.apple.com/search?term=${val}&media=music&entity=song&limit=12&country=in`
         let p=axios.get(url);
         p.then((res)=>{
             // console.log(res.data.results);
+            setSongData(null)
             setSongData(res.data.results)
         }).catch((err)=>{
             console.log(err);
@@ -20,9 +22,9 @@ const Search = (props) => {
     
     useEffect(()=>{
         getData();
-    },[])
+    },[val])
 
-    console.log("from search state",songData)
+    // console.log("from search state",songData)
   
     return (
         <div className={styles.bContainer}>
