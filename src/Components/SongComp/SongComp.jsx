@@ -14,7 +14,7 @@ function SongComp(props) {
   return (
     <div
         style={{
-            backgroundImage: `url(${props.song.thumb})`,
+            backgroundImage: `url(${props.song.thumb||props.song.artworkUrl100.replace("100x100bb.jpg","600x600bb.jpg")})`,
         }}
         className={styles.songCont}
       >

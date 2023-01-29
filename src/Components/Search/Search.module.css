@@ -3,13 +3,15 @@
     padding: 1rem;
 }
 .sContainer{
-    display: flex;
+    display: grid;
     width: 100%;
     background-color: lightgrey;
-    height: 500px;
+    height: fit-content;
     padding: 2rem;
     border-radius: 4rem;
     position: relative;
     overflow: hidden;
-    gap: 0.5rem;
+    gap: 2.1rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 450px));
 }

@@ -22,7 +22,7 @@ const Search = (props) => {
         getData();
     },[])
 
-    // console.log("from search state",songData)
+    console.log("from search state",songData)
   
     return (
         <div className={styles.bContainer}>
