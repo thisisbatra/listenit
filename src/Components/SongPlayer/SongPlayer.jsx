@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import localContext from "../../Context/localContext";
 import styles from "./SongPlayer.module.css";
-// import { BsFillPlayCircleFill } from 'react-icons/bs'
 
 function SongPlayer(props) {
   const [like, setLike] = useState(false);
@@ -13,6 +12,7 @@ function SongPlayer(props) {
   let songName = songForSongPlayer.trackName;
   let artist = songForSongPlayer.artistName||songForSongPlayer.artist;
   let movie = songForSongPlayer.collectionName||songForSongPlayer.movieName;
+  let img=songForSongPlayer.thumb||songForSongPlayer.artworkUrl100
   let imgSrc =
     "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3=w240-h480-rw";
   
@@ -53,7 +53,7 @@ function SongPlayer(props) {
         >
           audio not supported:(
         </audio>
-        <img className={styles.imgTag} src={imgSrc} alt="Song Thumbnail" />
+        <img className={styles.imgTag} src={img?img:imgSrc} alt="Song Thumbnail" />
       </div>
     </div>
   );
