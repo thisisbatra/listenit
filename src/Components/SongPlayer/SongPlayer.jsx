@@ -11,7 +11,7 @@ function SongPlayer(props) {
     <div className={styles.songPlayerCont}>
         SongPlayer
         <div className={styles.controlsCont}>
-          <audio src={songForSongPlayer.url||songForSongPlayer.previewUrl} controls autoPlay loop>
+          <audio src={songForSongPlayer.url||songForSongPlayer.previewUrl} controls autoPlay>
               audio not supported:(
           </audio>
           <div className={styles.songNameCont}>{songForSongPlayer.trackName}</div>
