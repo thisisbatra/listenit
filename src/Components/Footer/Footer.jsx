@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={styles.foot}>
             <span>
-                project @ MCA 1<sup>st</sup> semester
+               Minor project @ MCA 1<sup>st</sup> semester
             </span>
             <span>
                 <Link to="/ourTeam">our team</Link>

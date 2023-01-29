@@ -13,7 +13,8 @@
     min-height: 195px;
     height: fit-content;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(300px,300px);
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
