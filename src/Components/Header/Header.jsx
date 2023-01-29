@@ -36,7 +36,7 @@ const Header = () => {
                 <input type="text" name="input" id='inputField' placeholder={inputPlaceholder} onChange={handler} onKeyDown={enterKey}/>
                 </div>
                 <span>
-                <li><Link to=""><BsSuitHeart/></Link></li>
+                <li><Link to="/like"><BsSuitHeart/></Link></li>
                 <li><FaUserCircle/></li>
                 <li><BiMenu/></li>
                 </span>
