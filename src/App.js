@@ -8,12 +8,12 @@ import OurTeam from './Components/OurTeam/OurTeam';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Search from './Components/Search/Search';
 import SongPlayer from './Components/SongPlayer/SongPlayer';
-import SongStateContext from './Context/SongStateContext';
+import StateContext from './Context/StateContext';
 
 function App() {
 
   return (
-    <SongStateContext>
+    <StateContext>
           <BrowserRouter>
                 <Header/>
                 <Routes>
@@ -26,7 +26,7 @@ function App() {
                 <SongPlayer/>
                 <Footer/>
           </BrowserRouter>
-    </SongStateContext>
+    </StateContext>
   );
 }
 

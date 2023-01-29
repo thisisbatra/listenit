@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import styles from './SongComp.module.css'
 import { BsFillPlayCircleFill } from 'react-icons/bs'
-import SongContext from '../../Context/SongContext'
+import localContext from '../../Context/localContext'
 
 function SongComp(props) {
 
-  const [songForSongPlayer,setSongForSongPlayer]=useContext(SongContext);
-
+  const {song}=useContext(localContext);
+  const [songForSongPlayer,setSongForSongPlayer]=song
   const clickEvent=()=>{
       setSongForSongPlayer(props.song);
   }
