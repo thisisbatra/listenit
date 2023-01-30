@@ -4,10 +4,11 @@ import localContext from "../../Context/localContext";
 import styles from "./SongPlayer.module.css";
 
 function SongPlayer(props) {
-  const [like, setLike] = useState(false);
+  const [likeIt, setLikeIt] = useState(false);
 
-  const {song}=useContext(localContext);
+  const {song,like}=useContext(localContext);
   const [songForSongPlayer, setSongForSongPlayer]=song
+  const [likedSongData,setLikedSongData]=like;
 
   let songName = songForSongPlayer.trackName;
   let artist = songForSongPlayer.artistName||songForSongPlayer.artist;
@@ -19,6 +20,13 @@ function SongPlayer(props) {
   // const toggleLike = () => {
   //   setLike((prev)=>!prev);
   // }
+
+  const insertLike=()=>{
+        setLikedSongData(...likedSongData,songForSongPlayer)
+  }
+  const removeLike=()=>{
+
+  }
 
   return (
     <div className={styles.songPlayerCont}>
@@ -39,9 +47,9 @@ function SongPlayer(props) {
               </span>
             </span>
           </div>
-          <span className={styles.heart} onClick={()=>setLike((prev)=>!prev)}>
-            {like? <AiFillHeart/>
-            :<AiOutlineHeart/>}
+          <span className={styles.heart} onClick={()=>setLikeIt((prev)=>!prev)}>
+            {likeIt? <AiFillHeart onClick={removeLike}/>
+            :<AiOutlineHeart onClick={insertLike}/>}
           </span>
         </div>
         

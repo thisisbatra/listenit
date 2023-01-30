@@ -1,9 +1,38 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import styles from "./OurTeam.module.css";
 
 const OurTeam = () => {
+
+    const [teamList, setTeamList] = useState([]);
+
+    const getTeamData = () => {
+        let url="http://localhost:3006/team"
+        let p = axios.get(url)
+        p.then((res)=>{
+              setTeamList(res.data);  
+        }).catch((err)=>{
+            console.log(err);
+        })
+    }
+
+    useEffect(()=>{
+        getTeamData();
+    },[]);
+    console.log(teamList);
     return (
-        <div>
-            our team;)
+        <div className={styles.ourTeamCont}>
+            {teamList.map((list, index)=> 
+                <div style={{ justifyContent: index%2==0? "row" : "row-reverse" }} className={styles.ourTeamCard}>
+                    <div className={styles.content}>
+                        <span><strong>Name:</strong> {list.name}</span>
+                        <span><strong>Course:</strong> {list.course}</span>
+                        <span><strong>Roll No:</strong> {list.rollNumber}</span>
+                        <span><strong>Role in Project:</strong> {list.role}</span>
+                    </div>
+                    <img src={list.url} alt="Team Pictures"/>
+                </div>
+            )}
         </div>
     );
 }
