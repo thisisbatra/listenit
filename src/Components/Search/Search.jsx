@@ -13,7 +13,6 @@ const Search = (props) => {
         let p=axios.get(url);
         p.then((res)=>{
             // console.log(res.data.results);
-            setSongData(null)
             setSongData(res.data.results)
         }).catch((err)=>{
             console.log(err);

@@ -6,6 +6,7 @@ const Like = () => {
     const noLikeComp=<h3>oop's, No data found</h3>
     const likeComp=<h3>data is here!</h3>
 
+    // console.log("from like: ",likeData)
     return (
         <div className={styles.bContainer}>
             <div className={styles.sContainer}>

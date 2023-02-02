@@ -5,7 +5,7 @@ const StateContext = (props) => {
 
     const [songForSongPlayer, setSongForSongPlayer]=useState([]);
     const [likedSongData,setLikedSongData]=useState([]);
-    console.log("from likedSongData",likedSongData)
+    console.log("from likedSongData",likedSongData.length)
     return (
         <localContext.Provider value={{song:[songForSongPlayer,setSongForSongPlayer],like:[likedSongData,setLikedSongData]}}>
                 {props.children}        

@@ -1,5 +1,5 @@
 {
-    "random":[
+    "randomSong":[
         {
             "id":1,
             "trackName":"Badnam the bad boy",
@@ -124,7 +124,7 @@
       
 
     ],
-    "topHits":[
+    "topHitsSong":[
         {
             "id":1,
             "trackName":"Apna Bana le",
@@ -261,6 +261,43 @@
             "thumb":"https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/82/bb/04/82bb04f0-4809-1d90-a447-b9ddba3fc07a/8902894356947_cover.jpg/600x600bb.jpg",
             "url":"../assets/mp3/Yaari_Chandigarh_Waliye.mp3"
         }
+        
+    ],
+    "team":[
+        {
+            "id":1,
+            "name":"Nitin Batra",
+            "rollNumber":"01913004422",
+            "course":"MCA 1st Semester",
+            "role":"API, functionality of components, json-server... ^_^",
+            "url":"../assets/img/nitin batra.png"
+        },
+        {
+            "id":2,
+            "name":"Gagandeep Singh",
+            "rollNumber":"01813004422",
+            "course":"MCA 1st Semester",
+            "role":"front-end components with adding responsiveness to them... ;)",
+            "url":"../assets/img/gagandeep singh.png"      
+        },
+        {
+            "id":3,
+            "name":"Kamaljeet Singh",
+            "rollNumber":"02513004422",
+            "course":"MCA 1st Semester",
+            "role":"UI/UX in figma, configured json data... XD",
+            "url":"../assets/img/kamaljeet singh.png"      
+        },
+        {
+            "id":4,
+            "name":"Ankit Bansal",
+            "rollNumber":"02113004422",
+            "course":"MCA 1st Semester",
+            "role":"handled jsx and Documentation of project... :O",
+            "url":"../assets/img/ankit bansal.png"  
+        }
+    ],
+    "likedSongs":[
         
     ]
 }

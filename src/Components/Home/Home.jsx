@@ -8,7 +8,7 @@ const Home = () => {
     const [topHitSong, setTopHitSong] = useState([]);
 
     const getRandomData=()=>{
-        let url="http://localhost:3005/random"
+        let url="http://localhost:3005/randomSong"
         let p=axios.get(url);
         p.then((res)=>{
         // console.log(res.data);
@@ -18,7 +18,7 @@ const Home = () => {
         })
     }
     const getTopHitsData=()=>{
-        let url="http://localhost:3005/topHits"
+        let url="http://localhost:3005/topHitsSong"
         let p=axios.get(url)
         p.then((res)=>{
               setTopHitSong(res.data);  

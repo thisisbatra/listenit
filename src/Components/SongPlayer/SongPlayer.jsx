@@ -1,31 +1,30 @@
-import React, { useContext, useState } from "react";
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import React, { useContext } from "react";
 import localContext from "../../Context/localContext";
 import styles from "./SongPlayer.module.css";
 
 function SongPlayer(props) {
-  const [likeIt, setLikeIt] = useState(false);
-
+  
   const {song,like}=useContext(localContext);
   const [songForSongPlayer, setSongForSongPlayer]=song
   const [likedSongData,setLikedSongData]=like;
 
+  // let id=songForSongPlayer.id||songForSongPlayer.trackId;
   let songName = songForSongPlayer.trackName;
   let artist = songForSongPlayer.artistName||songForSongPlayer.artist;
   let movie = songForSongPlayer.collectionName||songForSongPlayer.movieName;
   let img=songForSongPlayer.thumb||songForSongPlayer.artworkUrl100
-  let imgSrc =
-    "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3=w240-h480-rw";
-  
-  // const toggleLike = () => {
-  //   setLike((prev)=>!prev);
-  // }
+  let imgSrc ="../assets/img/apple-music-note.jpg"
+  let likeId=songForSongPlayer.id||songForSongPlayer.trackName
 
-  const insertLike=()=>{
-        setLikedSongData(...likedSongData,songForSongPlayer)
-  }
-  const removeLike=()=>{
-
+  const toogleLike=(songForSongPlayer)=>{
+    let i=document.getElementById(songForSongPlayer.id)
+    if(i.className==="bi bi-heart"){
+      i.className="bi bi-heart-fill"
+      // setLikedSongData({...songForSongPlayer,setSongForSongPlayer})
+    }
+    else{
+      i.className="bi bi-heart"
+    }
   }
 
   return (
@@ -47,9 +46,8 @@ function SongPlayer(props) {
               </span>
             </span>
           </div>
-          <span className={styles.heart} onClick={()=>setLikeIt((prev)=>!prev)}>
-            {likeIt? <AiFillHeart onClick={removeLike}/>
-            :<AiOutlineHeart onClick={insertLike}/>}
+          <span className={styles.heart}>
+            <i className="bi bi-heart" id={likeId} onClick={()=>toogleLike(songForSongPlayer)}></i>
           </span>
         </div>
         

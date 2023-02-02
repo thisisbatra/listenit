@@ -7,7 +7,7 @@ const OurTeam = () => {
     const [teamList, setTeamList] = useState([]);
 
     const getTeamData = () => {
-        let url="http://localhost:3006/team"
+        let url="http://localhost:3005/team"
         let p = axios.get(url)
         p.then((res)=>{
               setTeamList(res.data);  
