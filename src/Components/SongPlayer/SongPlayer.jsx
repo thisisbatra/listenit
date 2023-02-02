@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import localContext from "../../Context/localContext";
 import styles from "./SongPlayer.module.css";
 
@@ -7,6 +7,7 @@ function SongPlayer(props) {
   const {song,like}=useContext(localContext);
   const [songForSongPlayer, setSongForSongPlayer]=song
   const [likedSongData,setLikedSongData]=like;
+  const [likeIcon,setLikeIcon]=useState(false)
 
   // let id=songForSongPlayer.id||songForSongPlayer.trackId;
   let songName = songForSongPlayer.trackName;
@@ -17,7 +18,7 @@ function SongPlayer(props) {
   let likeId=songForSongPlayer.id||songForSongPlayer.trackName
 
   const toogleLike=(songForSongPlayer)=>{
-    let i=document.getElementById(songForSongPlayer.id)
+    let i=document.getElementById(likeId)
     if(i.className==="bi bi-heart"){
       i.className="bi bi-heart-fill"
       // setLikedSongData({...songForSongPlayer,setSongForSongPlayer})
@@ -47,7 +48,7 @@ function SongPlayer(props) {
             </span>
           </div>
           <span className={styles.heart}>
-            <i className="bi bi-heart" id={likeId} onClick={()=>toogleLike(songForSongPlayer)}></i>
+          <i className="bi bi-heart" id={likeId} onClick={()=>toogleLike(songForSongPlayer)}></i>
           </span>
         </div>
         
