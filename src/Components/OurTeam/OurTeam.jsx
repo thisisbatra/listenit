@@ -22,8 +22,8 @@ const OurTeam = () => {
     console.log(teamList);
     return (
         <div className={styles.ourTeamCont}>
-            {teamList.map((list, index)=> 
-                <div style={{ justifyContent: index%2==0? "row" : "row-reverse" }} className={styles.ourTeamCard}>
+            {teamList.map((list)=> 
+                <div key={list.id} style={{ flexDirection: list.id%2===0 ? "row-reverse" : "row" }} className={styles.ourTeamCard}>
                     <div className={styles.content}>
                         <span><strong>Name:</strong> {list.name}</span>
                         <span><strong>Course:</strong> {list.course}</span>

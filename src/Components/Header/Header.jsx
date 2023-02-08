@@ -37,7 +37,7 @@ const Header = () => {
                 </div>
                 <span>
                 <li><Link to="/like"><BsSuitHeart/></Link></li>
-                <li><FaUserCircle/></li>
+                {/* <li><FaUserCircle/></li> */}
                 <li><BiMenu/></li>
                 </span>
             </ul>
