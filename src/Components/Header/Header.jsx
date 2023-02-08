@@ -28,7 +28,7 @@ const Header = () => {
         <nav className={styles.nav}>
             <ul>
                 <span>
-                <li>listenit</li>
+                <li>listenIt</li>
                 <li><Link to="/"><AiFillHome/></Link></li>
                 </span>
                 <div className={styles.input}>
@@ -36,7 +36,8 @@ const Header = () => {
                 <input type="text" name="input" id='inputField' placeholder={inputPlaceholder} onChange={handler} onKeyDown={enterKey}/>
                 </div>
                 <span>
-                <li><Link to="/like"><BsSuitHeart/></Link></li>
+                {/* <li><Link to="/like"><BsSuitHeart/></Link></li> */}
+                <li><Link to="/like"><i className="bi bi-heart"/></Link></li>
                 {/* <li><FaUserCircle/></li> */}
                 <li><BiMenu/></li>
                 </span>
