@@ -1,13 +1,17 @@
-import React, { useContext,useState } from "react";
+import React, { useContext } from "react";
 import localContext from "../../Context/localContext";
 import styles from "./SongPlayer.module.css";
 
 function SongPlayer(props) {
   
-  const {song,like}=useContext(localContext);
-  const [songForSongPlayer, setSongForSongPlayer]=song
-  const [likedSongData,setLikedSongData]=like;
-  const [likeIcon,setLikeIcon]=useState(false)
+  const {song,
+    // like
+  }=useContext(localContext);
+  const [songForSongPlayer, 
+    // setSongForSongPlayer
+  ]=song
+  // const [likedSongData,setLikedSongData]=like;
+  // const [likeIcon,setLikeIcon]=useState(false)
 
   // let id=songForSongPlayer.id||songForSongPlayer.trackId;
   let songName = songForSongPlayer.trackName;

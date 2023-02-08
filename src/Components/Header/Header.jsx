@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import {AiFillHome, AiOutlineSearch} from 'react-icons/ai';
-import {FaUserCircle} from 'react-icons/fa';
-import {BsSuitHeart} from 'react-icons/bs';
+// import {FaUserCircle} from 'react-icons/fa';
+// import {BsSuitHeart} from 'react-icons/bs';
 import {BiMenu} from 'react-icons/bi';
 import { Link, useNavigate } from 'react-router-dom';
 
