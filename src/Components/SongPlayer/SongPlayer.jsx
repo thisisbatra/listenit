@@ -1,19 +1,16 @@
-import React, { useContext } from "react";
+import axios from "axios";
+import React, { useContext,useState } from "react";
 import localContext from "../../Context/localContext";
 import styles from "./SongPlayer.module.css";
 
+
 function SongPlayer(props) {
   
-  const {song,
-    // like
-  }=useContext(localContext);
-  const [songForSongPlayer, 
-    // setSongForSongPlayer
-  ]=song
-  // const [likedSongData,setLikedSongData]=like;
-  // const [likeIcon,setLikeIcon]=useState(false)
+  const {song, like}=useContext(localContext);
+  const [songForSongPlayer, setSongForSongPlayer]=song
+  const [likedSongData,setLikedSongData]=like;
+  const [likeBoolState,setLikeBoolState]=useState(false)
 
-  // let id=songForSongPlayer.id||songForSongPlayer.trackId;
   let songName = songForSongPlayer.trackName;
   let artist = songForSongPlayer.artistName||songForSongPlayer.artist;
   let movie = songForSongPlayer.collectionName||songForSongPlayer.movieName;
@@ -21,14 +18,17 @@ function SongPlayer(props) {
   let imgSrc ="../assets/img/apple-music-note.jpg"
   let likeId=songForSongPlayer.id||songForSongPlayer.trackName
 
-  const toogleLike=(songForSongPlayer)=>{
-    let i=document.getElementById(likeId)
-    if(i.className==="bi bi-heart"){
-      i.className="bi bi-heart-fill"
-      // setLikedSongData({...songForSongPlayer,setSongForSongPlayer})
-    }
-    else{
-      i.className="bi bi-heart"
+  const toogleLike=(songForSongPlayer, e)=>{
+    // e.preventDefault();
+    setLikeBoolState((x)=>!x)
+    if(likeBoolState===false){
+        let url= 'http://localhost:3005/likedSongs/'
+        let p=axios.post(url,songForSongPlayer)
+        p.then((res)=>{
+          console.log(res)
+        }).catch((err)=>{
+          console.log(err)
+        })
     }
   }
 
@@ -52,8 +52,8 @@ function SongPlayer(props) {
                 </span>
               </span>
             </div>
-            <span className={styles.heart}>
-            <i className="bi bi-heart" id={likeId} onClick={()=>toogleLike(songForSongPlayer)}></i>
+            <span className={styles.heart} onClick={(e)=>toogleLike(songForSongPlayer, e)}>
+            <i className={likeBoolState?"bi bi-heart-fill":"bi bi-heart"}></i>
             </span>
           </div>
           
