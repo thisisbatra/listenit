@@ -36,34 +36,37 @@ function SongPlayer(props) {
     <div className={styles.songPlayerCont}>
       <div className={styles.controlsCont}>
         
-        <div className={styles.songName_HeartCont}>
-          <div className={styles.songNameCont}>
-            <span className={styles.songNameClass}>
-              {songName ? songName : "No Song Playing"}
-            </span>
-            <span className={styles.artist_n_Movie}>
-              <span className={styles.artist}>
-                {artist ? artist : "Artist Name"}
+        <div className={styles.songName_HeartCont_n_audTag_Cont}>
+          <div className={styles.songName_HeartCont}>
+            <div className={styles.songNameCont}>
+              <span className={styles.songNameClass}>
+                {songName ? songName : "No Song Playing"}
               </span>
-              &nbsp;•&nbsp;
-              <span className={styles.movie}>
-                {movie ? movie : "Movie Name"}
+              <span className={styles.artist_n_Movie}>
+                <span className={styles.artist}>
+                  {artist ? artist : "Artist Name"}
+                </span>
+                &nbsp;<span className={styles.pipe}>|</span>&nbsp;
+                <span className={styles.movie}>
+                  {movie ? movie : "Movie Name"}
+                </span>
               </span>
+            </div>
+            <span className={styles.heart}>
+            <i className="bi bi-heart" id={likeId} onClick={()=>toogleLike(songForSongPlayer)}></i>
             </span>
           </div>
-          <span className={styles.heart}>
-          <i className="bi bi-heart" id={likeId} onClick={()=>toogleLike(songForSongPlayer)}></i>
-          </span>
+          
+          <audio
+            className={styles.audioTag}
+            src={songForSongPlayer.url || songForSongPlayer.previewUrl}
+            controls
+            autoPlay
+          >
+            audio not supported:(
+          </audio>
         </div>
-        
-        <audio
-          className={styles.audioTag}
-          src={songForSongPlayer.url || songForSongPlayer.previewUrl}
-          controls
-          autoPlay
-        >
-          audio not supported:(
-        </audio>
+
         <img className={styles.imgTag} src={img?img:imgSrc} alt="Song Thumbnail" />
       </div>
     </div>

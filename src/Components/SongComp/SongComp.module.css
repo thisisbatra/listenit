@@ -60,3 +60,9 @@
     left: -15px;
     transform: rotate(180deg);
 }
+
+@media only screen and (max-width: 800px), (max-height: 600px) {
+    .songCont {
+        min-width: 65vw;
+    }
+}
