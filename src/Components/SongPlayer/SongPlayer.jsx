@@ -40,15 +40,15 @@ function SongPlayer(props) {
           <div className={styles.songName_HeartCont}>
             <div className={styles.songNameCont}>
               <span className={styles.songNameClass}>
-                {songName ? songName : "No Song Playing"}
+                <MarqueeComp marq={songName && true}>{songName ? songName : "No Song Playing"}</MarqueeComp>
               </span>
               <span className={styles.artist_n_Movie}>
                 <span className={styles.artist}>
-                  {artist ? artist : "Artist Name"}
+                  <MarqueeComp marq={artist && true}>{artist ? artist : "Artist Name"}</MarqueeComp>
                 </span>
                 &nbsp;<span className={styles.pipe}>|</span>&nbsp;
                 <span className={styles.movie}>
-                  {movie ? movie : "Movie Name"}
+                  <MarqueeComp marq={movie && true}>{movie ? movie : "Movie Name"}</MarqueeComp>
                 </span>
               </span>
             </div>
@@ -71,6 +71,18 @@ function SongPlayer(props) {
       </div>
     </div>
   );
+}
+
+export const MarqueeComp = (props) => {
+  if (props.marq) {
+    return (
+      <marquee style={props.style} scrollamount={props.scrollAmount? props.scrollAmount : 1}>
+        {props.children}
+      </marquee>
+    );
+  } else {
+      return props.children;
+  } 
 }
 
 export default SongPlayer;

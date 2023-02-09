@@ -29,7 +29,7 @@ const Header = () => {
             <ul>
                 <span>
                 <li>listenIt</li>
-                <li><Link to="/"><AiFillHome/></Link></li>
+                <li title="Home"><Link to="/"><AiFillHome/></Link></li>
                 </span>
                 <div className={styles.input}>
                 <li><AiOutlineSearch/></li>
@@ -37,9 +37,9 @@ const Header = () => {
                 </div>
                 <span>
                 {/* <li><Link to="/like"><BsSuitHeart/></Link></li> */}
-                <li><Link to="/like"><i className="bi bi-heart"/></Link></li>
+                <li title="Liked Songs"><Link to="/like"><i className="bi bi-heart"/></Link></li>
                 {/* <li><FaUserCircle/></li> */}
-                <li><BiMenu/></li>
+                <li title="Menu"><BiMenu/></li>
                 </span>
             </ul>
         </nav>

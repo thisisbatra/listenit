@@ -16,7 +16,13 @@
     justify-content: space-between;
     width: 100%;
     list-style-type: none;
+    font-size: 1.5rem;
 } 
+.nav li, .nav li a{
+    display: flex;
+    color: black;
+    align-items: center;
+}
 .input{
     display: flex;
     width: 40%;
