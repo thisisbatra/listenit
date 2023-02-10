@@ -3,7 +3,7 @@ import styles from "./Like.module.css";
 
 const Like = (props) => {
     const [likeData,setLikeData]=useState([]);
-    const noLikeComp="Oops!, No data found";
+    const noLikeComp="Oops, you haven't liked any song yet!";
     const likeComp="Data is here!";
 
     // console.log("from like: ",likeData)

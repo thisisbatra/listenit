@@ -5,9 +5,8 @@ import styles from "./SongPlayer.module.css";
 
 
 function SongPlayer(props) {
-  
   const {song, like}=useContext(localContext);
-  const [songForSongPlayer, setSongForSongPlayer]=song
+  const [songForSongPlayer, setSongForSongPlayer]=song;
   const [likedSongData,setLikedSongData]=like;
   const [likeBoolState,setLikeBoolState]=useState(false)
 
@@ -16,19 +15,20 @@ function SongPlayer(props) {
   let movie = songForSongPlayer.collectionName||songForSongPlayer.movieName;
   let img=songForSongPlayer.thumb||songForSongPlayer.artworkUrl100
   let imgSrc ="../assets/img/apple-music-note.jpg"
-  let likeId=songForSongPlayer.id||songForSongPlayer.trackName
+  // let likeBool=songForSongPlayer.likeBool
 
-  const toogleLike=(songForSongPlayer, e)=>{
-    // e.preventDefault();
+
+  const toogleLike=(songForSongPlayer)=>{
+    let likeId=songForSongPlayer.id||songForSongPlayer.trackName
     setLikeBoolState((x)=>!x)
+      
+      // console.log(songForSongPlayer)
     if(likeBoolState===false){
-        let url= 'http://localhost:3005/likedSongs/'
-        let p=axios.post(url,songForSongPlayer)
-        p.then((res)=>{
-          console.log(res)
-        }).catch((err)=>{
-          console.log(err)
-        })
+        console.log(likeBoolState," msg from tooglelike")
+        // setLikedSongData([...likedSongData,songForSongPlayer])
+    }
+    else{
+      console.log(likeBoolState," msg from tooglelike")
     }
   }
 
@@ -52,7 +52,7 @@ function SongPlayer(props) {
                 </span>
               </span>
             </div>
-            <span className={styles.heart} onClick={(e)=>toogleLike(songForSongPlayer, e)}>
+            <span className={styles.heart} onClick={()=>toogleLike(songForSongPlayer)}>
             <i className={likeBoolState?"bi bi-heart-fill":"bi bi-heart"}></i>
             </span>
           </div>
