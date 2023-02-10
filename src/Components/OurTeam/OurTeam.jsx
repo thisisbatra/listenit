@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import styles from "./OurTeam.module.css";
 
-const OurTeam = () => {
+const OurTeam = (props) => {
 
     const [teamList, setTeamList] = useState([]);
 
@@ -21,7 +21,7 @@ const OurTeam = () => {
     },[]);
     console.log(teamList);
     return (
-        <div className={styles.ourTeamCont}>
+        <div className={styles.ourTeamCont} style={{...props.contStyle}}>
             {teamList.map((list)=> 
                 <div key={list.id} style={{ flexDirection: list.id%2===0 ? "row-reverse" : "row" }} className={styles.ourTeamCard}>
                     <div className={styles.content}>

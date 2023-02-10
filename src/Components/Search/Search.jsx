@@ -28,7 +28,7 @@ const Search = (props) => {
     // console.log("from search state",songData)
   
     return (
-        <div className={styles.bContainer}>
+        <div className={styles.bContainer} style={{...props.contStyle}}>
             <div className={styles.sContainer}>
                     <h3 className={styles.result}>{songData.length>0?resultSuccessJsx:resultJsx}</h3>
                 <div className={styles.sContainer2}>

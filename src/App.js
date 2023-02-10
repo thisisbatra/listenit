@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
@@ -12,16 +13,24 @@ import StateContext from './Context/StateContext';
 
 function App() {
 
+  const [blur, setBlur] = useState();
+
+  const blurStyle = {
+    filter: blur? "blur(25px)" : "" ,
+    pointerEvents: blur? "none" : "",
+    transition: ".5s",
+  }
+
   return (
     <StateContext>
           <BrowserRouter>
-                <Header/>
+                <Header blurFunc={(bool)=>setBlur(bool)}/>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path='/search' element={<Search/>}/>
-                    <Route path='/ourTeam' element={<OurTeam/>}/>
-                    <Route path='/like' element={<Like/>} />
-                    <Route path='*' element={<PageNotFound/>}/>
+                    <Route path="/" element={<Home contStyle={blurStyle}/>}/>
+                    <Route path='/search' element={<Search contStyle={blurStyle}/>}/>
+                    <Route path='/ourTeam' element={<OurTeam contStyle={blurStyle}/>}/>
+                    <Route path='/like' element={<Like contStyle={blurStyle}/>} />
+                    <Route path='*' element={<PageNotFound contStyle={blurStyle}/>}/>
                 </Routes>
                 <SongPlayer/>
                 <Footer/>
