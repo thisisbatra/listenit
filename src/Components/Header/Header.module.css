@@ -13,6 +13,7 @@
 }
 .nav ul{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     list-style-type: none;
@@ -20,32 +21,73 @@
 } 
 .nav li, .nav li a{
     display: flex;
-    color: black;
+    color: #505050;
     align-items: center;
+    position: relative;
+}
+.activeness, .active{
+    display: flex;
+    transition: .5s;
+}
+.activeness:hover, .active:hover{
+    opacity: .8;
+}
+.activeness::after,
+.active::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    height: 100%;
+    width: 0;
+    border-bottom: 3px solid #505050;
+    padding-bottom: 1rem;
+    transition: .5s;
+}
+.active::after,
+.nav li:hover .activeness::after {
+    padding: 0 100% 1rem 100%;
 }
 .input{
     display: flex;
     width: 40%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5rem;
-    overflow: hidden;
-    padding: 1px 5px;
+    height: calc(100% + 5px);
     align-items: center;
+    position: relative;
+}
+#searchIcon {
+    position: absolute;
+    padding: 10px;
+    font-size: 1.3rem;
 }
 .input input{
     width: 100%;
-    padding: 1px 100px;
-    background-color: transparent;
+    height: 100%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5rem;
+    text-align: center;
     border: none;
     outline: none;
+    transition: .5s;
     font-size: 1rem;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 }
-.input li{
+.input input:focus{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+}
+.input li:not(#searchIcon){
     margin-left: 1rem;
     display: flex;
 }
-.nav ul span{
+.nav ul span:not(.activeness){
     display: flex;
     gap: 2rem;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 1050px), (max-height: 600px) {
+    .input input{
+        padding-left: 2.5rem;
+    }
 }
