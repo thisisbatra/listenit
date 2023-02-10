@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from 'usehooks-ts'
 import styles from "./Header.module.css";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -23,7 +23,7 @@ const Header = (props) => {
         <ul>
             <span>
             <li>listenIt</li>
-            <li title="Home">
+            {!maxWidth600 && <li title="Home">
                 <Link to="/">
                 <span className={location.pathname === "/" ? styles.active : styles.activeness}>
                     {location.pathname === "/"
@@ -32,18 +32,18 @@ const Header = (props) => {
                     }
                 </span>
                 </Link>
-            </li>
+            </li>}
             </span>
             {!maxWidth600 && <SearchBar inputPlaceholder={inputPlaceholder}/>}
             <span>
             {/* <li><Link to="/like"><BsSuitHeart/></Link></li> */}
-            <li title="View your Liked Songs">
+            {!maxWidth600 &&  <li title="View your Liked Songs">
                 <Link to="/like">
                 <span className={location.pathname === "/like" ? styles.active : styles.activeness}>
-                    <i className={location.pathname === "/like" ? "bi bi-heart-fill" : "bi bi-heart"} />
+                    <i className={location.pathname === "/like" ? "bi bi-heart-fill" : "bi bi-heart"} style={{ lineHeight: "0" }}/>
                 </span>
                 </Link>
-            </li>
+            </li>}
             {/* <li><FaUserCircle/></li> */}
             <li title="Menu" onClick={()=>setBlur((bool)=>!bool)}>
                 {blur 
@@ -53,7 +53,26 @@ const Header = (props) => {
             </li>
             </span>
         </ul>
-        <MenuComp maxWidth600={maxWidth600}/>
+        {/* {maxWidth600 && <MenuComp location={location} openOn={blur} closeOn={(bool)=>setBlur(bool)}/>} */}
+        {maxWidth600 &&
+            <div className={`${styles.menuCont} ${blur && styles.menuContActive}`}>
+                <SearchBar inputPlaceholder="Search your song" autoFocus={true} blur={blur}/>
+                <span onClick={()=>setBlur(false)} className={location.pathname === "/" ? styles.active2 : styles.activeness2}>
+                    <Link to="/">
+                        {location.pathname === "/"
+                            ? <RiHome2Fill />
+                            : <RiHome2Line />
+                        }&nbsp;&nbsp;Home
+                    </Link>
+                </span>
+                <div className={styles.hrLine}/>
+                <span onClick={()=>setBlur(false)} className={location.pathname === "/like" ? styles.active2 : styles.activeness2}>
+                    <Link to="/like">
+                        <i className={location.pathname === "/like" ? "bi bi-heart-fill" : "bi bi-heart"} />&nbsp;&nbsp;Liked Songs
+                    </Link>
+                </span>
+            </div>
+        }
         </nav>
     </>
   );
@@ -63,6 +82,7 @@ const SearchBar = (props) => {
     const [inputVal, setInputVal] = useState();
     
     const navigate = useNavigate();
+    const inputRef = useRef();
     
     const handler = (e) => {
       setInputVal(e.target.value);
@@ -75,6 +95,10 @@ const SearchBar = (props) => {
         navigate("/search", { state: { inputVal } });
       }
     };
+    
+    useEffect(()=>{
+        inputRef.current.focus();
+    }, [props.blur]);
 
     return (
         <div className={styles.input}>
@@ -82,21 +106,15 @@ const SearchBar = (props) => {
                 <AiOutlineSearch />
             </li>
             <input
+                ref={inputRef}
                 type="text"
                 name="input"
                 id="inputField"
+                // autoFocus
                 placeholder={props.inputPlaceholder}
                 onChange={handler}
                 onKeyDown={enterKey}
             />
-        </div>
-    );
-}
-
-const MenuComp = (props) => {
-    return (
-        <div className={styles.menuCont}>
-            {props.maxWidth600 && <SearchBar inputPlaceholder="Search your song"/>}
         </div>
     );
 }
