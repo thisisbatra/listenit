@@ -96,9 +96,9 @@ const SearchBar = (props) => {
       }
     };
     
-    useEffect(()=>{
-        inputRef.current.focus();
-    }, [props.blur]);
+    //useEffect(()=>{
+    //    inputRef.current.focus();
+    //}, [props.blur]);
 
     return (
         <div className={styles.input}>
