@@ -19,7 +19,7 @@ const OurTeam = (props) => {
     useEffect(()=>{
         getTeamData();
     },[]);
-    console.log(teamList);
+    // console.log(teamList);
     return (
         <div className={styles.ourTeamCont} style={{...props.contStyle}}>
             {teamList.map((list)=> 

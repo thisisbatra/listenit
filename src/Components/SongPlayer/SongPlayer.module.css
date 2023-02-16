@@ -33,7 +33,8 @@
     padding: .3rem 1rem;
 }
 .songNameCont {
-    width: 85%;
+    /* width: 85%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
 }

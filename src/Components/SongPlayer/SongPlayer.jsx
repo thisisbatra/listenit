@@ -52,9 +52,10 @@ function SongPlayer(props) {
                 </span>
               </span>
             </div>
-            <span className={styles.heart} onClick={()=>toogleLike(songForSongPlayer)}>
+            {/* ------------- Commented out the WIDTH also of class .songNameCont at line no. 35 in SongPlayer.module.css ------------- */}
+            {/* <span className={styles.heart} onClick={()=>toogleLike(songForSongPlayer)}>
             <i className={likeBoolState?"bi bi-heart-fill":"bi bi-heart"}></i>
-            </span>
+            </span> */}
           </div>
           
           <audio

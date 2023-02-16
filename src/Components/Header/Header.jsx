@@ -6,6 +6,7 @@ import { RiHome2Fill, RiHome2Line } from "react-icons/ri";
 import { BiMenu } from "react-icons/bi";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { MdOutlineClose } from "react-icons/md";
+import { BsInfoCircle, BsInfoCircleFill } from "react-icons/bs";
 
 const Header = (props) => {
   const [blur, setBlur] = useState(false);
@@ -18,8 +19,7 @@ const Header = (props) => {
   props.blurFunc(blur);
 
   return (
-    <>
-        <nav className={styles.nav}>
+    <nav className={styles.nav}>
         <ul>
             <span>
             <li>listenIt</li>
@@ -37,13 +37,30 @@ const Header = (props) => {
             {!maxWidth600 && <SearchBar inputPlaceholder={inputPlaceholder}/>}
             <span>
             {/* <li><Link to="/like"><BsSuitHeart/></Link></li> */}
-            {!maxWidth600 &&  <li title="View your Liked Songs">
-                <Link to="/like">
-                <span className={location.pathname === "/like" ? styles.active : styles.activeness}>
-                    <i className={location.pathname === "/like" ? "bi bi-heart-fill" : "bi bi-heart"} style={{ lineHeight: "0" }}/>
-                </span>
-                </Link>
-            </li>}
+            {!maxWidth600 && (
+                <>
+                    {/* ------------- Likes Tab ------------- */}
+                    {/* <li title="View your Liked Songs">
+                        <Link to="/like">
+                            <span className={location.pathname === "/like" ? styles.active : styles.activeness}>
+                                <i className={location.pathname === "/like" ? "bi bi-heart-fill" : "bi bi-heart"} style={{ lineHeight: "0" }}/>
+                            </span>
+                        </Link>
+                    </li> */}
+
+                    {/* ------------- Our Team Tab ------------- */}
+                    <li title="Our Team">
+                        <Link to="/ourTeam">
+                            <span className={location.pathname === "/ourTeam" ? styles.active : styles.activeness}>
+                                {location.pathname === "/ourTeam"
+                                    ? <BsInfoCircleFill />
+                                    : <BsInfoCircle />
+                                }
+                            </span>
+                        </Link>
+                    </li>
+                </>
+            )}
             {/* <li><FaUserCircle/></li> */}
             <li title="Menu" onClick={()=>setBlur((bool)=>!bool)}>
                 {blur 
@@ -56,7 +73,10 @@ const Header = (props) => {
         {/* {maxWidth600 && <MenuComp location={location} openOn={blur} closeOn={(bool)=>setBlur(bool)}/>} */}
         {maxWidth600 &&
             <div className={`${styles.menuCont} ${blur && styles.menuContActive}`}>
+                {/* ------------- SearchBar ------------- */}
                 <SearchBar inputPlaceholder="Search your song" autoFocus={true} blur={blur}/>
+                
+                {/* ------------- Home Tab ------------- */}
                 <span onClick={()=>setBlur(false)} className={location.pathname === "/" ? styles.active2 : styles.activeness2}>
                     <Link to="/">
                         {location.pathname === "/"
@@ -66,15 +86,26 @@ const Header = (props) => {
                     </Link>
                 </span>
                 <div className={styles.hrLine}/>
-                <span onClick={()=>setBlur(false)} className={location.pathname === "/like" ? styles.active2 : styles.activeness2}>
+                
+                {/* ------------- Like Tab (Commented Out for now) ------------- */}
+                {/* <span onClick={()=>setBlur(false)} className={location.pathname === "/like" ? styles.active2 : styles.activeness2}>
                     <Link to="/like">
                         <i className={location.pathname === "/like" ? "bi bi-heart-fill" : "bi bi-heart"} />&nbsp;&nbsp;Liked Songs
+                    </Link>
+                </span> */}
+                
+                {/* ------------- Our Team Tab ------------- */}
+                <span onClick={()=>setBlur(false)} className={location.pathname === "/ourTeam" ? styles.active2 : styles.activeness2}>
+                    <Link to="/ourTeam">
+                        {location.pathname === "/ourTeam"
+                            ? <BsInfoCircleFill />
+                            : <BsInfoCircle />
+                        }&nbsp;&nbsp;Our Team
                     </Link>
                 </span>
             </div>
         }
-        </nav>
-    </>
+    </nav>
   );
 };
 
