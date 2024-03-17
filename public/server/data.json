@@ -275,22 +275,6 @@
       "course": "MCA 1st Semester",
       "role": "front-end components with adding responsiveness to them... ;)",
       "url": "../assets/img/gagandeep singh.png"
-    },
-    {
-      "id": 3,
-      "name": "Kamaljeet Singh",
-      "rollNumber": "02513004422",
-      "course": "MCA 1st Semester",
-      "role": "UI/UX in figma, configured json data... XD",
-      "url": "../assets/img/kamaljeet singh.png"
-    },
-    {
-      "id": 4,
-      "name": "Ankit Bansal",
-      "rollNumber": "02113004422",
-      "course": "MCA 1st Semester",
-      "role": "handled jsx and Documentation of project... :o",
-      "url": "../assets/img/ankit bansal.png"
     }
   ],
   "likedSongs": [
