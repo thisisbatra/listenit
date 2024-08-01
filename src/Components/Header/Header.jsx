@@ -22,7 +22,7 @@ const Header = (props) => {
     <nav className={styles.nav}>
         <ul>
             <span>
-            <li>listenIt</li>
+            <li>Chorus</li>
             {!maxWidth600 && <li title="Home">
                 <Link to="/">
                 <span className={location.pathname === "/" ? styles.active : styles.activeness}>

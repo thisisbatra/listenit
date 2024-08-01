@@ -1,89 +1,70 @@
 import axios from "axios";
-import React, { useContext,useState } from "react";
+import React, { useContext,useState,useRef,useEffect } from "react";
 import localContext from "../../Context/localContext";
 import styles from "./SongPlayer.module.css";
-
+import {IoPause ,IoPlay,IoPlayBack,IoPlayForward,IoVolumeHigh,IoVolumeOff  } from "react-icons/io5";
+import { RiRepeat2Line,RiRepeatOneLine  } from "react-icons/ri";
 
 function SongPlayer(props) {
   const {song, like}=useContext(localContext);
   const [songForSongPlayer, setSongForSongPlayer]=song;
-  const [likedSongData,setLikedSongData]=like;
-  const [likeBoolState,setLikeBoolState]=useState(false)
+  // const [likedSongData,setLikedSongData]=like;
+  const audioRef=useRef(null);
+  const [progress,setProgress]=useState(0);
 
-  let songName = songForSongPlayer.trackName;
-  let artist = songForSongPlayer.artistName||songForSongPlayer.artist;
-  let movie = songForSongPlayer.collectionName||songForSongPlayer.movieName;
-  let img=songForSongPlayer.thumb||songForSongPlayer.artworkUrl100
-  let imgSrc ="../assets/img/apple-music-note.jpg"
-  // let likeBool=songForSongPlayer.likeBool
+  let url=songForSongPlayer.url||songForSongPlayer.previewUrl;
+  let songName = songForSongPlayer.trackName||"songName";
+  let artist = songForSongPlayer.artistName||songForSongPlayer.artist||"artistName";
+  let img=songForSongPlayer.thumb||songForSongPlayer.artworkUrl100||"../assets/img/apple-music-note.jpg";
 
+  const [isPlaying, setIsPlaying]=useState(true);
 
-  const toogleLike=(songForSongPlayer)=>{
-    let likeId=songForSongPlayer.id||songForSongPlayer.trackName
-    setLikeBoolState((x)=>!x)
-      
-      // console.log(songForSongPlayer)
-    if(likeBoolState===false){
-        console.log(likeBoolState," msg from tooglelike")
-        // setLikedSongData([...likedSongData,songForSongPlayer])
-    }
-    else{
-      console.log(likeBoolState," msg from tooglelike")
-    }
+  const playPauseHandler=()=>{
+    // console.log(audioRef);
+    (isPlaying)?audioRef.current.pause():audioRef.current.play();
+    setIsPlaying(!isPlaying);
   }
 
-  return (
-    <div className={styles.songPlayerCont}>
-      <div className={styles.controlsCont}>
-        
-        <div className={styles.songName_HeartCont_n_audTag_Cont}>
-          <div className={styles.songName_HeartCont}>
-            <div className={styles.songNameCont}>
-              <span className={styles.songNameClass}>
-                <MarqueeComp marq={songName && true}>{songName ? songName : "No Song Playing"}</MarqueeComp>
-              </span>
-              <span className={styles.artist_n_Movie}>
-                <span className={styles.artist}>
-                  <MarqueeComp marq={artist && true}>{artist ? artist : "Artist Name"}</MarqueeComp>
-                </span>
-                &nbsp;<span className={styles.pipe}>|</span>&nbsp;
-                <span className={styles.movie}>
-                  <MarqueeComp marq={movie && true}>{movie ? movie : "Movie Name"}</MarqueeComp>
-                </span>
-              </span>
-            </div>
-            {/* ------------- Commented out the WIDTH also of class .songNameCont at line no. 35 in SongPlayer.module.css ------------- */}
-            {/* <span className={styles.heart} onClick={()=>toogleLike(songForSongPlayer)}>
-            <i className={likeBoolState?"bi bi-heart-fill":"bi bi-heart"}></i>
-            </span> */}
-          </div>
-          
-          <audio
-            className={styles.audioTag}
-            src={songForSongPlayer.url || songForSongPlayer.previewUrl}
-            controls
-            autoPlay
-          >
-            audio not supported:(
-          </audio>
-        </div>
+  const handleProgressChange=(e)=>{
+      let value=e.target.value;
+      setProgress(value);
+      audioRef.current.currentTime=(audioRef.current.duration/100)*value;
+  }
 
-        <img className={styles.imgTag} src={img?img:imgSrc} alt="Song Thumbnail" />
+  const updateProgress=()=>{
+      setProgress((audioRef.current.currentTime/audioRef.current.duration)*100);
+  }
+
+  useEffect(()=>{
+    (songName==="songName")?setIsPlaying(false):setIsPlaying(true)
+    console.log(audioRef)
+  },[songForSongPlayer])
+
+  return (
+    <div className={styles.songComponent}>
+      <audio src={url} className={styles.audio} ref={audioRef} onTimeUpdate={updateProgress} controls autoPlay></audio>
+        <input type="range" className={styles.progressBar} min='0' max='100' step='0.01' value={progress} onChange={handleProgressChange} />
+
+      <div className={styles.songPlayer}>
+        <div className={styles.controllers}>
+          <IoPlayBack/>
+          {isPlaying?<IoPause onClick={playPauseHandler} />:<IoPlay onClick={playPauseHandler}/>}
+          <IoPlayForward/>
+        </div>
+        <div className={styles.songDetails}>
+          <img className={styles.imgTag} src={img} alt="thumbNail" />
+          <span>
+            <p className={styles.songName}>{songName}</p>
+            <p className={styles.artistName}>{artist}</p>
+          </span>
+        </div>
+        <div className={styles.controllers}>
+          <IoVolumeHigh/>
+          <RiRepeat2Line/>
+        </div>
       </div>
     </div>
   );
-}
-
-export const MarqueeComp = (props) => {
-  if (props.marq) {
-    return (
-      <marquee style={props.style} scrollamount={props.scrollAmount? props.scrollAmount : 1}>
-        {props.children}
-      </marquee>
-    );
-  } else {
-      return props.children;
-  } 
 }
 
 export default SongPlayer;
