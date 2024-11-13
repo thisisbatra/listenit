@@ -1,15 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from "./Footer.module.css";
 const Footer = () => {
+    const openNewWindow=()=>{
+        window.open("https://github.com/thisisbatra/listenit",'_blank');
+    }
     return (
         <footer className={styles.foot}>
-            <span>
-               Minor Project @ MCA 1<sup>st</sup> Semester
-            </span>
-            <span>
-                <Link to="/ourTeam">Our Team</Link>
-            </span>
+           <h1>
+                bringing ideas to life - nitin batra &copy; 2024 | 
+                <span id='documentation' onClick={openNewWindow} className={styles.doc}>
+                    detailed documentation
+                </span>
+            </h1>
         </footer>
     );
 }

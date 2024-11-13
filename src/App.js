@@ -28,7 +28,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home contStyle={blurStyle}/>}/>
                     <Route path='/search' element={<Search contStyle={blurStyle}/>}/>
-                    <Route path='/ourTeam' element={<OurTeam contStyle={blurStyle}/>}/>
+                    {/* <Route path='/ourTeam' element={<OurTeam contStyle={blurStyle}/>}/> */}
                     <Route path='/like' element={<Like contStyle={blurStyle}/>} />
                     <Route path='*' element={<PageNotFound contStyle={blurStyle}/>}/>
                 </Routes>

@@ -51,7 +51,7 @@ const Header = (props) => {
                     </li> */}
 
                     {/* ------------- Our Team Tab ------------- */}
-                    <li title="Our Team">
+                    {/* <li title="Our Team">
                         <Link to="/ourTeam">
                             <span className={location.pathname === "/ourTeam" ? styles.active : styles.activeness}>
                                 {location.pathname === "/ourTeam"
@@ -60,7 +60,7 @@ const Header = (props) => {
                                 }
                             </span>
                         </Link>
-                    </li>
+                    </li> */}
                 </>
             )}
             {/* <li><FaUserCircle/></li> */}

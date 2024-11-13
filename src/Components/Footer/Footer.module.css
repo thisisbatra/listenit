@@ -6,6 +6,10 @@
     background-color: lightgrey;
     justify-content: space-between;
     padding: 1rem;
-    font-size: 1.25rem;
+    font-size: 0.65rem;
     gap: 1rem;
+}
+.doc{
+    cursor: pointer;
+    color: blueviolet;
 }
