@@ -1,85 +1,3 @@
-/* .songPlayerCont {
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-    padding: 10px;
-}
-.controlsCont, .songName_HeartCont {
-    background-color: #D9D9D9;
-    padding: .7rem;
-    width: 100%;
-    height: fit-content;
-    border-radius: 10rem;
-    display: flex;
-    justify-content: space-between;
-    gap: .7rem;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-}
-.audioTag {
-    width: 100%;
-}
-.songName_HeartCont_n_audTag_Cont {
-    width: 100%;
-    display: flex;
-    gap: .7rem;
-}
-.songName_HeartCont {
-    background-color: #F1F3F4;
-    max-width: 27%;
-    height: 100%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-    gap: 5px;
-    align-items: center;
-    padding: .3rem 1rem;
-}
-.songNameCont {
-    // width: 85%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.songNameClass, .artist, .movie {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100%;
-}
-.songNameClass {
-    font-weight: 500;
-    text-align: center;
-}
-.artist_n_Movie {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    font-size: .8rem;
-}
-.artist, .movie {
-    max-width: 50%;
-    width: fit-content;
-}
-.pipe {
-    line-height: calc(100% + 3px);
-}
-.heart {
-    display: flex;
-    font-size: 1.5rem;
-    width: fit-content;
-    cursor: pointer;
-    transition: .2s;
-}
-.heart:hover {
-    opacity: .7;
-}
-.imgTag {
-    position: relative;
-    height: 54px;
-    border-radius: 50%;
-    border: 3px solid grey;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-} */
 .songComponent{
     display: flex;
     flex-direction: column;
@@ -91,13 +9,33 @@
     display: none;
 }
 .progressBar{
+    /* -webkit-appearance: none; */
     width: 100%;
     outline: none;
     cursor: pointer;
+    /* background-color: #d9d9d9; */
+    height: 0.5rem;
+    margin: 0.25rem 0;
+    border-radius: 50px;
+    /* color: red; */
 }
-.progressBar::-moz-progress-bar{
-    background: #393232;
-}
+/* .progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none; 
+    width: 0; 
+    height: 0; 
+    background: none; 
+  }
+  .progressBar::-moz-range-thumb {
+    width: 0; 
+    height: 0; 
+    background: none; 
+  }
+  .progressBar::-ms-thumb {
+    width: 0; 
+    height: 0; 
+    background: none; 
+  } */
 .songPlayer{
     background: #d9d9d9;
     border-radius: 10px;
@@ -121,13 +59,14 @@
     box-shadow: 0px 1px 8px 1px black;
 }
 .songName{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: capitalize;
 }
 .artistName{
     font-style: italic;
     text-transform: capitalize;
+    font-size: 1rem;
 }
 .controllers{
     font-size: 2rem;
@@ -136,45 +75,22 @@
     gap: 1rem;
     cursor: pointer;
 }
+.volumeControl{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: min-content;
+    position: relative;
+}
+.volumeBar{
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .pauseIcon{
     font-size: 4rem;
 }
 @media only screen and (max-width: 800px), (max-height: 600px) {
-    /* .controlsCont {
-        border-radius: 25px;
-        padding: .5rem;
-    }
-    .songName_HeartCont_n_audTag_Cont {
-        flex-direction: column;
-    }
-    .songName_HeartCont {
-        max-width: 100%;
-        height: fit-content;
-        padding: .3rem .5rem;
-        background-color: #E7E7E7;
-        box-shadow: none;
-    }
-    .audioTag {
-        min-height: 2.5rem;
-        max-height: 2.5rem;
-    }
-    .songNameCont {
-        font-size: .8rem;
-        flex-direction: row;
-        align-items: center;
-    }
-    .artist_n_Movie {
-        font-size: .6rem;
-        width: fit-content;
-    }
-    .heart {
-        font-size: 1rem;
-    }
-    .imgTag {
-        height: 82px;
-    } */
+    
 }
-
-/* SongPlayer.jsx mein 16th line no. par ye daal do:   
-let imgSrc = songForSongPlayer.artworkUrl100? songForSongPlayer.artworkUrl100 :
-    "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3=w240-h480-rw"; */

@@ -7,18 +7,17 @@ const Home = (props) => {
     const [randomSong, setRandomSong] = useState([]);
     const [topHitSong, setTopHitSong] = useState([]);
 
-    const getRandomData=()=>{
-        let url="http://localhost:3005/randomSong"
+    const getLikedData=()=>{
+        let url="http://localhost:8080/getMostLikedSongs"
         let p=axios.get(url);
         p.then((res)=>{
-        // console.log(res.data);
         setRandomSong(res.data)
         }).catch((err)=>{
         console.log(err);
         })
     }
     const getTopHitsData=()=>{
-        let url="http://localhost:3005/topHitsSong"
+        let url="http://localhost:8080/getMostClickedSongs"
         let p=axios.get(url)
         p.then((res)=>{
               setTopHitSong(res.data);  
@@ -28,7 +27,7 @@ const Home = (props) => {
     }
     // console.log("from state",randomSong);
     useEffect(()=>{
-        getRandomData();
+        getLikedData();
         getTopHitsData();
     },[]);
 
@@ -37,7 +36,7 @@ const Home = (props) => {
             padding: "1rem 2rem",
             ...props.contStyle
         }}>
-            <LibraryContainer data={randomSong} head="Randoms"/>
+            <LibraryContainer data={randomSong} head="Most Liked"/>
             <LibraryContainer data={topHitSong} head="Top Hits"/>
         </div>
     );

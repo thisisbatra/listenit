@@ -2,282 +2,259 @@
   "randomSong": [
     {
       "id": 1,
-      "trackName": "Badnam the bad boy",
+      "songName": "Badnam the bad boy",
       "movieName": "Single",
-      "artist": "Mankirt Aulakh",
-      "thumb": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/9c/5e/4b/9c5e4b21-7abd-3cf4-9f1b-e77d1886325c/8902633278462.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Badnam  The Bad Boy -(Mr-Jatt.com).mp3"
+      "artistName": "Mankirt Aulakh",
+      "thumbUrl": "https://is4-ssl.mzstatic.com/image/thumbUrl/Music115/v4/9c/5e/4b/9c5e4b21-7abd-3cf4-9f1b-e77d1886325c/8902633278462.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Badnam  The Bad Boy -(Mr-Jatt.com).mp3"
     },
     {
       "id": 2,
-      "trackName": "Blue Eyes Yo Yo Honey Singh",
+      "songName": "Blue Eyes Yo Yo Honey Singh",
       "movieName": "Single",
-      "artist": "Honey Singh",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music71/v4/81/0b/a4/810ba47e-952c-8818-ad3c-9899b4928cd4/8902894354943_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Blue Eyes Yo Yo Honey Singh (PagalWorld.com) - 320Kbps .mp3"
+      "artistName": "Honey Singh",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music71/v4/81/0b/a4/810ba47e-952c-8818-ad3c-9899b4928cd4/8902894354943_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Blue Eyes Yo Yo Honey Singh (PagalWorld.com) - 320Kbps .mp3"
     },
     {
       "id": 3,
-      "trackName": "Bol Do Na Zara",
+      "songName": "Bol Do Na Zara",
       "movieName": "Azhar",
-      "artist": "Armaan Malik",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/33/2f/1e/332f1e03-4cc1-85b7-c23d-1de5802b9b94/8902894358057_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Bol Do Na Zara - Azhar - Armaan Malik.mp3"
+      "artistName": "Armaan Malik",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music115/v4/33/2f/1e/332f1e03-4cc1-85b7-c23d-1de5802b9b94/8902894358057_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Bol Do Na Zara - Azhar - Armaan Malik.mp3"
     },
     {
       "id": 4,
-      "trackName": "BreakUp Party",
+      "songName": "BreakUp Party",
       "movieName": "Single",
-      "artist": "Honey Singh",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music71/v4/59/64/11/596411b0-78ca-c5d3-8255-3aae1ee90894/cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Breakup Party - Yo Yo Honey Singh (PagalWorld.com)- 320Kbps.mp3"
+      "artistName": "Honey Singh",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music71/v4/59/64/11/596411b0-78ca-c5d3-8255-3aae1ee90894/cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Breakup Party - Yo Yo Honey Singh (PagalWorld.com)- 320Kbps.mp3"
     },
     {
       "id": 5,
-      "trackName": "Brown Munde",
+      "songName": "Brown Munde",
       "movieName": "Single",
-      "artist": "AP Dhillon",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/80/9c/06/809c0677-5ea8-a026-4d2a-2df25fa89523/859742042973_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Brown Munde - AP Dhillon.mp3"
+      "artistName": "AP Dhillon",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music114/v4/80/9c/06/809c0677-5ea8-a026-4d2a-2df25fa89523/859742042973_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Brown Munde - AP Dhillon.mp3"
     },
     {
       "id": 6,
-      "trackName": "Brown Rang",
+      "songName": "Brown Rang",
       "movieName": "Single",
-      "artist": "Honey Singh",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/7f/86/32/7f8632d0-dab1-2d58-af27-dfa7206a9cc9/8902633269552.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Brown Rang - Yo Yo Honey Singh (PagalWorld.com)- 320Kbps.mp3"
+      "artistName": "Honey Singh",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music112/v4/7f/86/32/7f8632d0-dab1-2d58-af27-dfa7206a9cc9/8902633269552.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Brown Rang - Yo Yo Honey Singh (PagalWorld.com)- 320Kbps.mp3"
     },
     {
       "id": 7,
-      "trackName": "Dil Diyan Gallan",
+      "songName": "Dil Diyan Gallan",
       "movieName": "Tiger Zinda Hai",
-      "artist": "Vishal & Shekhar & Atif Aslam",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/55/16/15/5516155a-733c-800c-1081-e5e982e8a603/849486091696_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Dil Diyan Gallan - Tiger Zinda Hai (Atif) 320Kbps.mp3"
+      "artistName": "Vishal & Shekhar & Atif Aslam",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music115/v4/55/16/15/5516155a-733c-800c-1081-e5e982e8a603/849486091696_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Dil Diyan Gallan - Tiger Zinda Hai (Atif) 320Kbps.mp3"
     },
     {
       "id": 8,
-      "trackName": "Excuses",
+      "songName": "Excuses",
       "movieName": "Single",
-      "artist": "AP Dhillon & Gurinder Gill & Intense",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/47/47/ac/4747ac85-1658-64ae-bc82-220a4d6213d5/859747478890_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Excuses.mp3"
+      "artistName": "AP Dhillon & Gurinder Gill & Intense",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music125/v4/47/47/ac/4747ac85-1658-64ae-bc82-220a4d6213d5/859747478890_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Excuses.mp3"
     },
     {
       "id": 9,
-      "trackName": "Filhall",
+      "songName": "Filhall",
       "movieName": "Single",
-      "artist": "B. Praak",
-      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9d/da/9a/9dda9a1e-bf43-1726-29f6-bd3e30b8fe90/20UMGIM63902.rgb.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Filhall (Pagalsongs.in).mp3"
+      "artistName": "B. Praak",
+      "thumbUrl": "https://is1-ssl.mzstatic.com/image/thumbUrl/Music124/v4/9d/da/9a/9dda9a1e-bf43-1726-29f6-bd3e30b8fe90/20UMGIM63902.rgb.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Filhall (Pagalsongs.in).mp3"
     },
     {
       "id": 10,
-      "trackName": "Hamari Adhuri Kahani",
+      "songName": "Hamari Adhuri Kahani",
       "movieName": "Single",
-      "artist": "Jeet Gannguli, Mithoon & Ami Mishra",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/28/94/26/28942687-425c-d8d0-4284-3a54e4d1170b/886445273656.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Hamari Adhuri Kahani.mp3"
+      "artistName": "Jeet Gannguli, Mithoon & Ami Mishra",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music125/v4/28/94/26/28942687-425c-d8d0-4284-3a54e4d1170b/886445273656.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Hamari Adhuri Kahani.mp3"
     },
     {
       "id": 11,
-      "trackName": "Haule Haule",
+      "songName": "Haule Haule",
       "movieName": "Rab Ne Bana Di Jodi",
-      "artist": "Sukhwinder Singh",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/e5/7a/8b/e57a8bb7-8513-3bf9-8268-cc3062ae00df/849486008052_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Haule Haule.mp3"
+      "artistName": "Sukhwinder Singh",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music125/v4/e5/7a/8b/e57a8bb7-8513-3bf9-8268-cc3062ae00df/849486008052_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Haule Haule.mp3"
     },
     {
       "id": 12,
-      "trackName": "Humsafar",
+      "songName": "Humsafar",
       "movieName": "Badrinath Ki Dulhania",
-      "artist": "Amaal Mallik, Akhil Sachdeva, Tanishk Bagchi & Bappi Lahiri",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/7c/6e/e7/7c6ee7c8-c1f3-e40f-1ec7-7ff96d0776f8/8902894358804_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/humsafar.mpeg"
+      "artistName": "Amaal Mallik, Akhil Sachdeva, Tanishk Bagchi & Bappi Lahiri",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music124/v4/7c/6e/e7/7c6ee7c8-c1f3-e40f-1ec7-7ff96d0776f8/8902894358804_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/humsafar.mpeg"
     },
     {
       "id": 13,
-      "trackName": "Ik onkar",
+      "songName": "Ik onkar",
       "movieName": "Satnam Sri Wahe Guru",
-      "artist": "A.R. Rahman & Harshdeep Kaur",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/41/88/a9/4188a982-b949-587a-5bc1-aa38f4e65abd/886443836570.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/ik onkar.mp3"
+      "artistName": "A.R. Rahman & Harshdeep Kaur",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music113/v4/41/88/a9/4188a982-b949-587a-5bc1-aa38f4e65abd/886443836570.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/ik onkar.mp3"
     },
     {
       "id": 14,
-      "trackName": "Kabhi Jo Badal Barse",
+      "songName": "Kabhi Jo Badal Barse",
       "movieName": "Single",
-      "artist": "Arijit Singh, Samira Koppikar & Dj Chetas",
-      "thumb": "https://is4-ssl.mzstatic.com/image/thumb/Music122/v4/ac/82/3e/ac823eec-9713-47f3-58f4-b10cc347a51b/8903431607584_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Kabhi Jo Baadal Barse.mp3"
+      "artistName": "Arijit Singh, Samira Koppikar & Dj Chetas",
+      "thumbUrl": "https://is4-ssl.mzstatic.com/image/thumbUrl/Music122/v4/ac/82/3e/ac823eec-9713-47f3-58f4-b10cc347a51b/8903431607584_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Kabhi Jo Baadal Barse.mp3"
     },
     {
       "id": 15,
-      "trackName": "Kabhi Kabhi Aditi",
+      "songName": "Kabhi Kabhi Aditi",
       "movieName": "Jaane Tu... Ya Jaane Na",
-      "artist": "Rashid Ali",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/69/9d/1e/699d1e5f-9fb9-a4a9-3fe0-6cae29b7dd49/8902894626033_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Kabhi Kabhi Aditi.mp3"
-    }
-  ],
-  "topHitsSong": [
-    {
-      "id": 1,
-      "trackName": "Apna Bana le",
-      "movieName": "Bhediya",
-      "artist": "Arijit Singh",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/2e/0b/c0/2e0bc070-112f-a827-6ad8-6bc64f7caaff/840214460180.png/600x600bb.jpg",
-      "url": "../assets/mp3/Apna-Bana-Le(PaglaSongs).mp3"
-    },
-    {
-      "id": 2,
-      "trackName": "Lehanga",
-      "movieName": "Single",
-      "artist": "Jass Manak",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/86/00/ab/8600abf3-9796-2dfa-3756-d90eb8267423/cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Lehanga - Jass Manak.mp3"
-    },
-    {
-      "id": 3,
-      "trackName": "Lut Gaye",
-      "movieName": "Single",
-      "artist": "Jubin Nautiyal",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/ce/43/71/ce437176-4d13-f380-e991-2492a2e63dc8/8903431805706_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Lut Gaye_320(PagalWorld.com.se).mp3"
-    },
-    {
-      "id": 4,
-      "trackName": "Main Rang Sharbaton Ka",
-      "movieName": "Phata Poster Nikhla Hero",
-      "artist": "Atif Aslam, Chinmayi Sripada & Pritam",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/02/98/a6/0298a63c-c22f-52d9-a62c-1e7c19980a3a/8901854030330.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Main Rang Sharbaton Ka.mp3"
-    },
-    {
-      "id": 5,
-      "trackName": "Mera mann",
-      "movieName": "Nautanki Saala",
-      "artist": "Falak Shabbir",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/cb/6b/d4/cb6bd4a6-ed30-f42c-3e91-cc06c8dfe426/8902894352635_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/mera mann.mpeg"
-    },
-    {
-      "id": 6,
-      "trackName": "Mitwa",
-      "movieName": "Kabhi Alvida Naa Kehna",
-      "artist": "Caralisa Monteiro, Shafqat Amanat Ali, Shankar Mahadevan & Shankar Ehsaan Loy",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/15/3e/84/153e841c-14dc-4841-7e2d-f677dd9bff61/888880946089.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Mitwa.mp3"
-    },
-    {
-      "id": 7,
-      "trackName": "Namo Namo",
-      "movieName": "Kedarnath",
-      "artist": "Amit Trivedi",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/7a/3c/b7/7a3cb7cb-8006-ee23-2f42-675beff2cb19/8718857673460.png/600x600bb.jpg",
-      "url": "../assets/mp3/Namo_Namo.mp3"
-    },
-    {
-      "id": 8,
-      "trackName": "Pani Da Rang",
-      "movieName": "Vicky Donor",
-      "artist": "Ayushmann Khurrana",
-      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/06/32/c2/0632c2c2-245f-a956-2c9e-5d83739208d6/828970021821.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/paani da rang.mpeg"
-    },
-    {
-      "id": 9,
-      "trackName": "Qismat",
-      "movieName": "Single",
-      "artist": "Ammy Virk",
-      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/44/b0/87/44b08790-5f24-b9a0-2204-7ac5215658d3/8902633272507.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Qismat-(Mr-Jatt.com).mp3"
-    },
-    {
-      "id": 10,
-      "trackName": "Raabta Female",
-      "movieName": "Agent Vinod",
-      "artist": "Pritam, Shreya Ghoshal & Arijit Singh",
-      "thumb": "https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/dc/a5/46/dca54628-5ca4-148c-d5c3-6219abc886e1/8902894698825_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/raabta female.mpeg"
-    },
-    {
-      "id": 11,
-      "trackName": "Sanam Re",
-      "movieName": "Sanam Re",
-      "artist": "Mithoon & Arijit Singh",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/fe/1d/e4/fe1de42c-cc56-cd1d-fd40-339bbfa8f0f3/8902894357647_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Sanam Re (Title Song) Arijit Singh 190Kbps.mp3"
-    },
-    {
-      "id": 12,
-      "trackName": "Soch Na Sake Version 2",
-      "movieName": "Airlift",
-      "artist": "Amaal Mallik, Arijit Singh & Tulsi Kumar",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/e5/c2/73/e5c27399-7cda-db04-b038-5b95b1cf4fc4/8902894357623_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Soch Na Sake Version 2 - Airlift (Arijit Singh) 320Kbps.mp3"
-    },
-    {
-      "id": 13,
-      "trackName": "Tera Yaar Hoon Main",
-      "movieName": "Sonu Ke Titu Ki Sweety",
-      "artist": "Arijit Singh",
-      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/81/a5/b0/81a5b084-89f7-7ed8-372e-aefd67504922/8902894360074_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Tera Yaar Hoon Main - Sonu Ke Titu Ki Sweety.mp3"
-    },
-    {
-      "id": 14,
-      "trackName": "Toota Jo Kabhi Tara",
-      "movieName": "A Flying Jatt",
-      "artist": "Atif Aslam & Sumedha Karmahe",
-      "thumb": "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/e9/cf/1d/e9cf1d4e-c8b8-7eaa-a92d-60cf7a2372c7/8718857700029.png/600x600bb.jpg",
-      "url": "../assets/mp3/Toota Jo Kabhi Tara.mp3"
-    },
-    {
-      "id": 15,
-      "trackName": "Tu Jaane Na",
-      "movieName": "Ajab Prem Ki Ghazab Kahani",
-      "artist": "Atif Aslam",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/43/fb/d8/43fbd870-9a3b-ccd9-8866-2a2c6dc48287/8901854003792.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Tu Jaane Na - Atif Aslam - 320Kbps.mp3"
+      "artistName": "Rashid Ali",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music124/v4/69/9d/1e/699d1e5f-9fb9-a4a9-3fe0-6cae29b7dd49/8902894626033_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Kabhi Kabhi Aditi.mp3"
     },
     {
       "id": 16,
-      "trackName": "Agar Tum Saath Ho",
-      "movieName": "Tamasha",
-      "artist": "Alka Yagnik & Arijit Singh",
-      "thumb": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/cb/ac/67/cbac673a-9213-7118-bb4e-2440273afb03/8902894357470_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Tum Saath Ho - Tamasha (Arijit Singh) 320Kbps.mp3"
+      "songName": "Apna Bana le",
+      "movieName": "Bhediya",
+      "artistName": "Arijit Singh",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music122/v4/2e/0b/c0/2e0bc070-112f-a827-6ad8-6bc64f7caaff/840214460180.png/600x600bb.jpg",
+      "prevUrl": "static/mp3/Apna-Bana-Le(PaglaSongs).mp3"
     },
     {
       "id": 17,
-      "trackName": "Yaari Chandigarh Waliye",
-      "movieName": "Mitti Da Bawa",
-      "artist": "Ranjit Bawa",
-      "thumb": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/82/bb/04/82bb04f0-4809-1d90-a447-b9ddba3fc07a/8902894356947_cover.jpg/600x600bb.jpg",
-      "url": "../assets/mp3/Yaari_Chandigarh_Waliye.mp3"
-    }
-  ],
-  "team": [
-    {
-      "id": 1,
-      "name": "Nitin Batra",
-      "rollNumber": "01913004422",
-      "course": "MCA 1st Semester",
-      "role": "API, functionality of components, json-server... ^_^",
-      "url": "../assets/img/nitin batra.png"
+      "songName": "Lehanga",
+      "movieName": "Single",
+      "artistName": "Jass Manak",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music113/v4/86/00/ab/8600abf3-9796-2dfa-3756-d90eb8267423/cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Lehanga - Jass Manak.mp3"
     },
     {
-      "id": 2,
-      "name": "Gagandeep Singh",
-      "rollNumber": "01813004422",
-      "course": "MCA 1st Semester",
-      "role": "front-end components with adding responsiveness to them... ;)",
-      "url": "../assets/img/gagandeep singh.png"
+      "id": 18,
+      "songName": "Lut Gaye",
+      "movieName": "Single",
+      "artistName": "Jubin Nautiyal",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music114/v4/ce/43/71/ce437176-4d13-f380-e991-2492a2e63dc8/8903431805706_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Lut Gaye_320(PagalWorld.com.se).mp3"
+    },
+    {
+      "id": 19,
+      "songName": "Main Rang Sharbaton Ka",
+      "movieName": "Phata Poster Nikhla Hero",
+      "artistName": "Atif Aslam, Chinmayi Sripada & Pritam",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music114/v4/02/98/a6/0298a63c-c22f-52d9-a62c-1e7c19980a3a/8901854030330.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Main Rang Sharbaton Ka.mp3"
+    },
+    {
+      "id": 20,
+      "songName": "Mera mann",
+      "movieName": "Nautanki Saala",
+      "artistName": "Falak Shabbir",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music115/v4/cb/6b/d4/cb6bd4a6-ed30-f42c-3e91-cc06c8dfe426/8902894352635_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/mera mann.mpeg"
+    },
+    {
+      "id": 21,
+      "songName": "Mitwa",
+      "movieName": "Kabhi Alvida Naa Kehna",
+      "artistName": "Caralisa Monteiro, Shafqat Amanat Ali, Shankar Mahadevan & Shankar Ehsaan Loy",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music114/v4/15/3e/84/153e841c-14dc-4841-7e2d-f677dd9bff61/888880946089.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Mitwa.mp3"
+    },
+    {
+      "id": 22,
+      "songName": "Namo Namo",
+      "movieName": "Kedarnath",
+      "artistName": "Amit Trivedi",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music114/v4/7a/3c/b7/7a3cb7cb-8006-ee23-2f42-675beff2cb19/8718857673460.png/600x600bb.jpg",
+      "prevUrl": "static/mp3/Namo_Namo.mp3"
+    },
+    {
+      "id": 23,
+      "songName": "Pani Da Rang",
+      "movieName": "Vicky Donor",
+      "artistName": "Ayushmann Khurrana",
+      "thumbUrl": "https://is1-ssl.mzstatic.com/image/thumbUrl/Music126/v4/06/32/c2/0632c2c2-245f-a956-2c9e-5d83739208d6/828970021821.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/paani da rang.mpeg"
+    },
+    {
+      "id": 24,
+      "songName": "Qismat",
+      "movieName": "Single",
+      "artistName": "Ammy Virk",
+      "thumbUrl": "https://is1-ssl.mzstatic.com/image/thumbUrl/Music118/v4/44/b0/87/44b08790-5f24-b9a0-2204-7ac5215658d3/8902633272507.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Qismat-(Mr-Jatt.com).mp3"
+    },
+    {
+      "id": 25,
+      "songName": "Raabta Female",
+      "movieName": "Agent Vinod",
+      "artistName": "Pritam, Shreya Ghoshal & Arijit Singh",
+      "thumbUrl": "https://is3-ssl.mzstatic.com/image/thumbUrl/Music114/v4/dc/a5/46/dca54628-5ca4-148c-d5c3-6219abc886e1/8902894698825_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/raabta female.mpeg"
+    },
+    {
+      "id": 26,
+      "songName": "Sanam Re",
+      "movieName": "Sanam Re",
+      "artistName": "Mithoon & Arijit Singh",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music124/v4/fe/1d/e4/fe1de42c-cc56-cd1d-fd40-339bbfa8f0f3/8902894357647_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Sanam Re (Title Song) Arijit Singh 190Kbps.mp3"
+    },
+    {
+      "id": 27,
+      "songName": "Soch Na Sake Version 2",
+      "movieName": "Airlift",
+      "artistName": "Amaal Mallik, Arijit Singh & Tulsi Kumar",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music124/v4/e5/c2/73/e5c27399-7cda-db04-b038-5b95b1cf4fc4/8902894357623_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Soch Na Sake Version 2 - Airlift (Arijit Singh) 320Kbps.mp3"
+    },
+    {
+      "id": 28,
+      "songName": "Tera Yaar Hoon Main",
+      "movieName": "Sonu Ke Titu Ki Sweety",
+      "artistName": "Arijit Singh",
+      "thumbUrl": "https://is1-ssl.mzstatic.com/image/thumbUrl/Music115/v4/81/a5/b0/81a5b084-89f7-7ed8-372e-aefd67504922/8902894360074_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Tera Yaar Hoon Main - Sonu Ke Titu Ki Sweety.mp3"
+    },
+    {
+      "id": 29,
+      "songName": "Toota Jo Kabhi Tara",
+      "movieName": "A Flying Jatt",
+      "artistName": "Atif Aslam & Sumedha Karmahe",
+      "thumbUrl": "https://is4-ssl.mzstatic.com/image/thumbUrl/Music114/v4/e9/cf/1d/e9cf1d4e-c8b8-7eaa-a92d-60cf7a2372c7/8718857700029.png/600x600bb.jpg",
+      "prevUrl": "static/mp3/Toota Jo Kabhi Tara.mp3"
+    },
+    {
+      "id": 30,
+      "songName": "Tu Jaane Na",
+      "movieName": "Ajab Prem Ki Ghazab Kahani",
+      "artistName": "Atif Aslam",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music124/v4/43/fb/d8/43fbd870-9a3b-ccd9-8866-2a2c6dc48287/8901854003792.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Tu Jaane Na - Atif Aslam - 320Kbps.mp3"
+    },
+    {
+      "id": 31,
+      "songName": "Agar Tum Saath Ho",
+      "movieName": "Tamasha",
+      "artistName": "Alka Yagnik & Arijit Singh",
+      "thumbUrl": "https://is2-ssl.mzstatic.com/image/thumbUrl/Music125/v4/cb/ac/67/cbac673a-9213-7118-bb4e-2440273afb03/8902894357470_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Tum Saath Ho - Tamasha (Arijit Singh) 320Kbps.mp3"
+    },
+    {
+      "id": 32,
+      "songName": "Yaari Chandigarh Waliye",
+      "movieName": "Mitti Da Bawa",
+      "artistName": "Ranjit Bawa",
+      "thumbUrl": "https://is5-ssl.mzstatic.com/image/thumbUrl/Music124/v4/82/bb/04/82bb04f0-4809-1d90-a447-b9ddba3fc07a/8902894356947_cover.jpg/600x600bb.jpg",
+      "prevUrl": "static/mp3/Yaari_Chandigarh_Waliye.mp3"
     }
-  ],
-  "likedSongs": [
-    
   ]
 }

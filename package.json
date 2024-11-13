@@ -9,6 +9,7 @@
     "axios": "^1.2.3",
     "bootstrap-icons": "^1.10.3",
     "json-server": "^0.17.1",
+    "listenit": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -17,6 +18,7 @@
     "usehooks-ts": "^2.9.1",
     "web-vitals": "^2.1.4"
   },
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -16,7 +16,9 @@ const Header = (props) => {
 
   const inputPlaceholder = "Enter artist, album, song name to get results";
 
-  props.blurFunc(blur);
+  useEffect(() => {
+    props.blurFunc(blur);
+  }, [blur, props]);
 
   return (
     <nav className={styles.nav}>

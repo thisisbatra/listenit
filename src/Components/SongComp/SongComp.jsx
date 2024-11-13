@@ -14,12 +14,12 @@ function SongComp(props) {
   return (
     <div
         style={{
-            backgroundImage: `url(${props.song.thumb||props.song.artworkUrl100.replace("100x100bb.jpg","600x600bb.jpg")})`,
+            backgroundImage: `url(${props.song.thumbUrl.replace("100x100bb.jpg","600x600bb.jpg")})`,
         }}
         className={styles.songCont}
       >
         <span className={styles.playBtn}><BsFillPlayCircleFill onClick={clickEvent}/></span>
-        <span className={styles.songName}>{props.song.trackName}</span>
+        {/* <span className={styles.songName}>{props.song.trackName}</span> */}
     </div>
   )
 }
