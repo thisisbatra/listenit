@@ -10,10 +10,10 @@ function SongPlayer(props) {
   const [songForSongPlayer, setSongForSongPlayer]=song;
   // const [likedSongData,setLikedSongData]=like;
 
-  let url=songForSongPlayer.url||songForSongPlayer.prevUrl;
-  let songName = songForSongPlayer.trackName||songForSongPlayer.songName||"songName";
-  let artist = songForSongPlayer.artistName||songForSongPlayer.artist||"artistName";
-  let img=songForSongPlayer.thumb||songForSongPlayer.thumbUrl||"../assets/img/apple-music-note.jpg";
+  let url=songForSongPlayer.prevUrl;
+  let songName = songForSongPlayer.songName||"songName";
+  let artist = songForSongPlayer.artistName||"artistName";
+  let img = songForSongPlayer.thumbUrl||"../assets/img/apple-music-note.jpg";
 
   const [isPlaying, setIsPlaying]=useState(true);
   const audioRef=useRef(null);
