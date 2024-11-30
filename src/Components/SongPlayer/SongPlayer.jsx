@@ -58,7 +58,7 @@ function SongPlayer(props) {
 
   return (
     <div className={styles.songComponent}>
-      <audio src={`http://localhost:8080/mp3/${url}`} className={styles.audio} ref={audioRef} onTimeUpdate={updateProgress} controls autoPlay></audio>
+      <audio src={`https://chorus-backend.onrender.com/mp3/${url}`} className={styles.audio} ref={audioRef} onTimeUpdate={updateProgress} controls autoPlay></audio>
         <input type="range" className={styles.progressBar} min='0' max='100' step='0.01' value={isNaN(progress) ? 0 : progress} onChange={handleProgressChange} />
 
       <div className={styles.songPlayer}>

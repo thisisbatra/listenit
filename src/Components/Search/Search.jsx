@@ -12,7 +12,8 @@ const Search = (props) => {
     const resultJsx=<p>Sorry, can't able to find your search request `{val}` :(</p>
     const getData=()=>{
         // let url=`https://itunes.apple.com/search?term=${val}&media=music&entity=song&limit=12&country=in`
-        let url=`http://localhost:8080/searchSong?term=${val}`
+        //http://localhost:8080
+        let url=`https://chorus-backend.onrender.com/searchSong?term=${val}`
         let p=axios.get(url);
         p.then((res)=>{
             console.log(res);

@@ -8,7 +8,7 @@ const Home = (props) => {
     const [topHitSong, setTopHitSong] = useState([]);
 
     const getLikedData=()=>{
-        let url="http://localhost:8080/getMostLikedSongs"
+        let url="https://chorus-backend.onrender.com/getMostLikedSongs"
         let p=axios.get(url);
         p.then((res)=>{
         setRandomSong(res.data)
@@ -17,7 +17,7 @@ const Home = (props) => {
         })
     }
     const getTopHitsData=()=>{
-        let url="http://localhost:8080/getMostClickedSongs"
+        let url="https://chorus-backend.onrender.com/getMostClickedSongs"
         let p=axios.get(url)
         p.then((res)=>{
               setTopHitSong(res.data);  
