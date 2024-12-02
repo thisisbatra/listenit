@@ -10,7 +10,13 @@ function SongPlayer(props) {
   const [songForSongPlayer, setSongForSongPlayer]=song;
   // const [likedSongData,setLikedSongData]=like;
 
-  let url=songForSongPlayer.prevUrl;
+  let checkUrl=(url)=>{
+    if(url.includes(".m4a"))
+      return url;
+    else
+      return "https://chorus-backend.onrender.com/mp3/"+url;
+  }
+  let url=checkUrl(songForSongPlayer.prevUrl);
   let songName = songForSongPlayer.songName||"songName";
   let artist = songForSongPlayer.artistName||"artistName";
   let img = songForSongPlayer.thumbUrl||"../assets/img/apple-music-note.jpg";
@@ -58,7 +64,7 @@ function SongPlayer(props) {
 
   return (
     <div className={styles.songComponent}>
-      <audio src={`https://chorus-backend.onrender.com/mp3/${url}`} className={styles.audio} ref={audioRef} onTimeUpdate={updateProgress} controls autoPlay></audio>
+      <audio src={url} className={styles.audio} ref={audioRef} onTimeUpdate={updateProgress} controls autoPlay></audio>
         <input type="range" className={styles.progressBar} min='0' max='100' step='0.01' value={isNaN(progress) ? 0 : progress} onChange={handleProgressChange} />
 
       <div className={styles.songPlayer}>
